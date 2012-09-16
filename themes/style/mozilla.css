@@ -26,12 +26,22 @@
 }
 .deck-container .slide h1 {
   color: #08455f;
+  text-align: left;
+  position: static;
+  padding: 1em 0 0.5em 0;
+  line-height: 1;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: 0;
 }
 .deck-container .slide h2 {
   color:rgb(62,62,62);
   text-transform: uppercase;
   font:lighter 40px/1.13 'OpenSansLight', sans-serif;
   border-bottom: none;
+  padding-top: 1em;
 }
 .cssreflections .deck-container .slide h2 {
   line-height: 1;
@@ -204,4 +214,34 @@
   -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/*********************************************************
+* Helpers
+*/
+
+.slide .align-left {
+  text-align: left;
+  margin: 0;
+}
+
+/*********************************************************
+* Grid
+*/
+
+.slide .row > div {
+  float: left;
+  margin-right: 10%;
+}
+
+.slide .row > div:last-child {
+  margin-right: 0;
+}
+
+.slide .row > .half {
+  width: 45%;
+}
+
+.slide .row > .third {
+  width: 26.66666%;
 }
