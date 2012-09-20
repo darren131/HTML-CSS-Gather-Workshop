@@ -39,17 +39,14 @@
 .deck-container .slide h2 {
   color:rgb(62,62,62);
   text-transform: uppercase;
-  font:lighter 40px/1.13 'OpenSansLight', sans-serif;
+  font:lighter 60px/1.13 'OpenSansLight', sans-serif;
   border-bottom: none;
-  padding-top: 1em;
-}
-.cssreflections .deck-container .slide h2 {
-  line-height: 1;
-  -webkit-box-reflect: below -0.556em -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.3, transparent), color-stop(0.7, rgba(255, 255, 255, 0.1)), to(transparent));
-  -moz-box-reflect: below -0.556em -moz-linear-gradient(top, transparent 0%, transparent 30%, rgba(255, 255, 255, 0.3) 100%);
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 .deck-container .slide h3 {
-  color: #000;
+  color:rgb(62,62,62);
+  padding: 30px 0;
 }
 .deck-container .slide pre {
   border-color: #cde;
@@ -102,7 +99,8 @@
   transform: rotate(3deg);
 }
 .deck-container .slide code {
-  color: #789;
+  color: #00A38A;
+  font-family: menlo, monospace;
 }
 .deck-container .slide blockquote {
   font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
@@ -244,4 +242,15 @@
 
 .slide .row > .third {
   width: 26.66666%;
+}
+
+/*********************************************************
+* Table
+*/
+
+.deck-container table {
+  margin-top: 40px;
+}
+.deck-container td {
+  padding-bottom: 40px;
 }
