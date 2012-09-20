@@ -6,8 +6,21 @@
 .deck-container {
   font-family: 'OpenSansRegular', sans-serif;
   font-size: 1.75em;
+  line-height: 1.4;
   background:url(../images/bg-sandstone-2.png);
   color:rgb(62,62,62);
+}
+.deck-container:after {
+    content: " ";
+    float: right;
+    display: block;
+    background: url(../images/tab-2.png);
+    height: 41px;
+    width: 150px;
+    position: relative;
+    text-indent: -2000px;
+    overflow: hidden;
+    z-index: 999;
 }
 .deck-container > .slide {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
