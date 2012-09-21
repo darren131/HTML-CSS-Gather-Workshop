@@ -217,7 +217,6 @@
       <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;&lt;/tag&gt;</code></p>
       <p>Practice writing a <code>body</code> tag with me here:</p>
 <textarea class="coder-editor"></textarea>
-<script type="coder-solution">&lt;body&gt;&lt;/body&gt;</script>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -261,12 +260,6 @@
       <p class="centered" style="font-size: 2.5em;"><code>&lt;tag&gt;<span style="font-size: 1.3em; color: purple;">&lt;tag&gt;&lt;/tag&gt;</span>&lt;/tag&gt;</code></p>
       <p>Practice writing a <code>head</code> and <code>body</code> tag nested inside of a <code>html</code> tag with me here:</p>
 <textarea class="coder-editor"></textarea>
-<script type="coder-solution">&lt;html&gt;
-  &lt;head&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</script>
 <br clear="all" />
        <p class="centered sidenote"><strong>Remember:</strong> The innermost tag must be closed <strong>before</strong>  trying to open up a new tag.<br />
         This would be incorrect: &lt;html&gt;&lt;head&gt;&lt;body&gt;&lt;/html&gt;&lt;/head&gt;&lt;/body&gt; </p>
@@ -284,13 +277,6 @@
   &lt;body&gt;
   &lt;/body&gt;
 &lt;/html&gt;</textarea>
-<script type="coder-solution">&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</script>
       <br clear="all" />
       <p class="centered sidenote"><strong>Remember:</strong> The innermost tag must be closed <strong>before</strong>  trying to open up a new tag.<br />
         This would be incorrect: &lt;html&gt;&lt;head&gt;&lt;title&gt;&lt;/html&gt;&lt;/head&gt;&lt;/title&gt; </p>
@@ -361,7 +347,6 @@
       <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;<span style="color: #333;">Content</span>&lt;/tag&gt;</code></p>
       <p>Practice writing a <code>body</code> tag with some human-viewable content here:</p>
 <textarea class="coder-editor"></textarea>
-<script type="coder-solution">&lt;body&gt;Hello!&lt;/body&gt;</script>
       <br clear="all" />
     </article>
 
@@ -809,15 +794,6 @@
   <a href="http://twitter.com/@pearlchen" target="_blank">Twitter</a>!
 </p>
 </textarea>
-<script type='coder-solution'><h1 style="background-color: black; color: white;">Welcome!</h1>
-<p style="font-size: 18px;">This is my website.</p>
-
-<h1 style="background-color: black; color: white;">Social Media</h1>
-<p style="font-size: 18px;">Follow me on
-  <a href="http://twitter.com/@pearlchen" target="_blank"
-  style="color: red;">Twitter</a>!
-</p>
-</script>
 
     </article>
 
@@ -836,21 +812,6 @@
   <a href="http://twitter.com/@pearlchen" target="_blank">Twitter</a>!
 </p>
 </textarea>
-<script type='coder-solution'>
-<h1>Welcome!</h1>
-<p>This is my website.</p>
-
-<h1>Social Media</h1>
-<p>Follow me on
-  <a href="http://twitter.com/@pearlchen" target="_blank">Twitter</a>!
-</p>
-
-<style>
-  h1 { background-color: black; color: white; }
-  p { font-size: 18apx; }
-  a { color: red; }
-</style>
-</script>
 
     </article>
 
@@ -1004,21 +965,6 @@ a {
 &lt;a href="about.html"&gt;About&lt;/a&gt;
 &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
 </textarea>
-<script type='coder-solution'>&lt;style&gt;
-a {
-  /*
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  */
-  border: 1px solid black;
-}
-&lt;/style&gt;
-
-&lt;a href="index.html"&gt;Home&lt;/a&gt;
-&lt;a href="about.html"&gt;About&lt;/a&gt;
-&lt;a href="contact.html"&gt;Contact&lt;/a&gt;
-</script>
 
     </article>
 
@@ -1045,23 +991,6 @@ a {
 &lt;a href="about.html"&gt;About&lt;/a&gt;
 &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
 </textarea>
-<script type='coder-solution'>&lt;style&gt;
-a {
-  border: 1px solid black;
-  /*
-  padding-top: 5px;
-  padding-right: 30px;
-  padding-bottom: 5px;
-  padding-left: 30px;
-  */
-  padding: 5px 30px 5px 30px;
-}
-&lt;/style&gt;
-
-&lt;a href="index.html"&gt;Home&lt;/a&gt;
-&lt;a href="about.html"&gt;About&lt;/a&gt;
-&lt;a href="contact.html"&gt;Contact&lt;/a&gt;
-</script>
 
     </article>
 
@@ -1083,21 +1012,6 @@ a {
 &lt;a href="about.html"&gt;About&lt;/a&gt;
 &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
 </textarea>
-<script type='coder-solution'>&lt;style&gt;
-a {
-  border: 1px solid black;
-  padding: 5px 30px 5px 30px;
-
-  background-color: black;
-  color: white;
-  text-decoration: none;
-}
-&lt;/style&gt;
-
-&lt;a href="index.html"&gt;Home&lt;/a&gt;
-&lt;a href="about.html"&gt;About&lt;/a&gt;
-&lt;a href="contact.html"&gt;Contact&lt;/a&gt;
-</script>
 
     </article>
 
@@ -1129,28 +1043,6 @@ a {
 &lt;a href="about.html"&gt;About&lt;/a&gt;
 &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
 </textarea>
-<script type='coder-solution'>&lt;style&gt;
-a {
-  border: 1px solid black;
-  padding: 5px 30px 5px 30px;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-
-  /*
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  */
-  margin: 15px 10px 0 0;
-}
-&lt;/style&gt;
-
-&lt;a href="index.html"&gt;Home&lt;/a&gt;
-&lt;a href="about.html"&gt;About&lt;/a&gt;
-&lt;a href="contact.html"&gt;Contact&lt;/a&gt;
-</script>
 
     </article>
 
@@ -1175,25 +1067,6 @@ a {
 &lt;a href="about.html"&gt;About&lt;/a&gt;
 &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
 </textarea>
-<script type='coder-solution'>&lt;style&gt;
-a {
-  border: 1px solid black;
-  padding: 5px 30px 5px 30px;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  margin: 15px 10px 0 0;
-
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-}
-&lt;/style&gt;
-
-&lt;a href="index.html"&gt;Home&lt;/a&gt;
-&lt;a href="about.html"&gt;About&lt;/a&gt;
-&lt;a href="contact.html"&gt;Contact&lt;/a&gt;
-</script>
 
       <br clear="all" />
       <p class="sidenote"><strong>Advanced topic:</strong> To get it looking even more like a button, use the <code>border-radius</code> property.<br />
@@ -1230,29 +1103,6 @@ a:hover {
 &lt;a href="about.html"&gt;About&lt;/a&gt;
 &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
 </textarea>
-<script type='coder-solution'>&lt;style&gt;
-a {
-  border: 1px solid black;
-  padding: 5px 30px 5px 30px;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  margin: 15px 10px 0 0;
-
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-}
-
-a:hover {
-  background-color: purple;
-}
-&lt;/style&gt;
-
-&lt;a href="index.html"&gt;Home&lt;/a&gt;
-&lt;a href="about.html"&gt;About&lt;/a&gt;
-&lt;a href="contact.html"&gt;Contact&lt;/a&gt;
-</script>
 
     </article>
 
@@ -1285,35 +1135,6 @@ a:hover {
   &lt;a href="http://twitter.com/pearlchen" target="_blank"&gt;Twitter&lt;/a&gt;!
 &lt;/p&gt;
 </textarea>
-<script type='coder-solution'>&lt;a
-  href="index.html"
-  style="border: 1px solid black;
-  padding: 5px 30px 5px 30px;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  margin: 15px 10px 0 0;"&gt;Home&lt;/a&gt;
-&lt;a
-  href="about.html"
-  style="border: 1px solid black;
-  padding: 5px 30px 5px 30px;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  margin: 15px 10px 0 0;"&gt;About&lt;/a&gt;
-&lt;a
-  href="contact.html"
-  style="border: 1px solid black;
-  padding: 5px 30px 5px 30px;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  margin: 15px 10px 0 0;"&gt;Contact&lt;/a&gt;
-
-&lt;p&gt;Follow me on
-  &lt;a href="http://twitter.com/pearlchen" target="_blank"&gt;Twitter&lt;/a&gt;!
-&lt;/p&gt;
-</script>
       <br clear="all" />
       <p class="sidenote">Now that's a lot of CSS! What if you change you mind and decide that the background color should be blue now? Plus you can't apply pseudo selectors like <code>:hover</code> inline.</p>
     </article>
@@ -1369,29 +1190,6 @@ a:hover {
   &lt;a href="http://twitter.com/pearlchen" target="_blank"&gt;Twitter&lt;/a&gt;!
 &lt;/p&gt;
 </textarea>
-<script type='coder-solution'>&lt;style&gt;
-.nav_button {
-  border: 1px solid black;
-  padding: 5px 30px 5px 30px;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  margin: 15px 10px 0 0;
-}
-
-.nav_button:hover {
-  background-color: purple;
-}
-&lt;/style&gt;
-
-&lt;a href="index.html" class="nav_button"&gt;Home&lt;/a&gt;
-&lt;a href="about.html" class="nav_button"&gt;About&lt;/a&gt;
-&lt;a href="contact.html" class="nav_button"&gt;Contact&lt;/a&gt;
-
-&lt;p&gt;Follow me on
-  &lt;a href="http://twitter.com/pearlchen" target="_blank"&gt;Twitter&lt;/a&gt;!
-&lt;/p&gt;
-</script>
     </article>
 
     <!-- SLIDE: CSS -->
@@ -1662,20 +1460,6 @@ footer {
   Cupcake ipsum dolor sit amet halvah muffin apple pie. Pastry sweet jelly soufflé icing cake carrot cake tart chupa chups. Topping cookie bear claw.
 &lt;/div&gt;
 </textarea>
-<script type="coder-solution">&lt;style&gt;
-  #centered_on_page {
-    margin: 0 auto 0 auto;
-  }
-  div {
-    width: 200px;
-    border: 1px solid black;
-  }
-&lt;/style&gt;
-
-&lt;div id="centered_on_page"&gt;
-  Cupcake ipsum dolor sit amet halvah muffin apple pie. Pastry sweet jelly soufflé icing cake carrot cake tart chupa chups. Topping cookie bear claw.
-&lt;/div&gt;
-</script>
     </article>
 
         <!-- SLIDE: CSS -->
