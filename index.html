@@ -1446,30 +1446,6 @@ aside {
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
-      <h2>Clearing floats</h2>
-        <p>You may notice that floats have the ability to affect the rest of the webpage in unexpected ways. It's important to always clear your floats.</p>
-        <p>One way is to use the <code>clear</code> property on an element that comes <em>directly</em> after the containers that are floating. Values can be <code>left</code>, <code>right</code>, or <code>both</code>.</p>
-<pre>
-footer {
-  width: 960px;
-  border: 1px solid gray;
-  <strong>clear: both;</strong>
-}
-</pre>
-      <br /><br /><br />
-      <hr />
-      <p class="sidenote">If the elements that are floating are enclosed in another container, you can you apply <code>overflow:auto</code> to the parent container:</p>
-<pre>nav {
-  <strong>overflow: auto;</strong>
-}</pre>
-
-      <p class="sidenote">Another way (when all else fails) is via a line break tag with a clear attribute:  <code>&lt;br clear="all" /&gt;</code></p>
-
-    </article>
-
-
-    <!-- SLIDE: CSS -->
-    <article class='slide slide-list'>
       <h2>CSS id's</h2>
       <p>CSS classes are great when you want to re-apply the same style to multiple HTML elements but sometimes you need to only target an HTML container <strong>once</strong>. This is where an <span class="keyword">ID</span> is useful.</p>
       <ul>
@@ -1480,27 +1456,12 @@ footer {
         </li>
       </ul>
       <p class="sidenote"><strong>Important!</strong> You should only have <strong>one</strong> instance of an ID per page. Any more can cause unexpected things to happen with your CSS -- and later, JavaScript.</p>
-<textarea class="coder-editor">
-&lt;style&gt;
-  #centered_on_page {
-    margin: 0 auto 0 auto;
-  }
-  div {
-    width: 200px;
-    border: 1px solid black;
-  }
-&lt;/style&gt;
-
-&lt;div&gt;
-  Cupcake ipsum dolor sit amet halvah muffin apple pie. Pastry sweet jelly soufflé icing cake carrot cake tart chupa chups. Topping cookie bear claw.
-&lt;/div&gt;
-</textarea>
     </article>
 
         <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>CSS id's</h2>
-      <p>Let's add <code>#centered_on_page</code> to <code>styles.css</code> and apply the id to the <code>div</code> container immediately after the opening <code>&lt;body&gt;</code> tag in <code>index.html</code>.</p>
+      <p>Let's add <code>#centered_on_page</code> and apply the id to the <code>div</code> container immediately after the opening <code>&lt;body&gt;</code> tag in <code>index.html</code>.</p>
 <pre>
 #centered_on_page {
   margin: 0 auto 0 auto;
