@@ -50,9 +50,9 @@
   transform: 0;
 }
 .deck-container .slide h2 {
+  font-size: 2em;
   color:rgb(62,62,62);
-  text-transform: uppercase;
-  font:lighter 60px/1.13 'OpenSansLight', sans-serif;
+  font: "ff-meta-web-pro", 'OpenSansRegular', sans-serif;
   border-bottom: none;
   padding-top: 100px;
   padding-bottom: 30px;
