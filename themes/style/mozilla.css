@@ -272,6 +272,16 @@
     clear: both;
 }
 
+.underline {
+  text-decoration: underline;
+  color: #2F67B7;
+}
+
+.no-bullets li {
+  list-style: none;
+  padding-left: 20px;
+}
+
 /*********************************************************
 * Grid
 */
@@ -436,4 +446,14 @@ This text &lt;br&gt;goes over&lt;br&gt;several lines.
   0% { top: 0; }
   50% { top: 15px; }
   100% { top: 0; }
+}
+
+.hover-example {
+  position: relative;
+}
+.hover-example:hover {
+  -moz-animation: bounce 1s infinite;
+  background: #2F67B7;
+  color: #FFF;
+  text-shadow: none;
 }
