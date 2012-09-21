@@ -750,19 +750,39 @@ Hello&lt;br&gt;world
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
-      <h2>Solve the riddle by changing the page's background colour</h2>
-      <p>View <code><a href="https://thimble.webmaker.org/p/tkx/edit" target="_blank">https://thimble.webmaker.org/p/tkx/edit</a></code> in your browser. If you change the background colour, the answer to the riddle will <strong>magically appear</strong>!</p>
-      <p>Let's add this to the <code>style</code> tag in the head. You can use any colour you want:</p>
+      <h2>Our first style: background-color</h2>
+      <p><code>background-color</code> is a property that can be applied to any tag, such as the <code>body</code>.</p>
+      <p>There are many different kinds of colour values. One way is to use English colour names (American spelling), such as red, blue, green, pink...</p>
+      <p>There are some weird ones too &ndash; like Coral, AliceBlue, and Cornsilk.</p>
+
+<pre>
+&lt;head&gt;
+  &lt;style&gt;
+    body {
+     <span class="omg">background-color: blue;</span>
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+</pre>
+
+    </article>
+
+    <!-- SLIDE: CSS -->
+    <article class='slide slide-list'>
+      <h2>Challenge!</h2>
+      <h4>Solve the riddle by changing the page's background colour</h4>
+      <p>Visit <a href="http://www.147colors.com/">http://www.147colors.com/</a> and check out the different colour names you can use one the web. Find one you like. <strong>Hint: try to pick a darker colour!</strong></p>
+      <p>View <code><a href="https://thimble.webmaker.org/p/tkx/edit" target="_blank">https://thimble.webmaker.org/p/tkx/edit</a></code> in your browser. Your challenge is to change the background colour, so that the answer to the riddle will <strong>magically appear</strong>!</p>
 <div class="fake-thimble cf">
   <div class="left">
     <pre>
 body {
-  background: red;
+  background: black;
 }
     </pre>
   </div>
   <div class="right">
-    <div class="preview" style="background: red; height: 180px;">
+    <div class="preview" style="background: black; height: 180px;">
     </div>
   </div>
 </div>
