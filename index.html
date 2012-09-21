@@ -543,37 +543,6 @@ Hello&lt;br&gt;world
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Working with images</h2>
-      <p>In the <code>exercises/2_WORKING_WITH_IMAGES</code> folder, there's an <code>index.html</code> file and 3 images of various types.</p>
-      <div class="reminders"><p>To make your web development life easier, turn on the option to see the file extension type in Explorer (<a href="http://windows.microsoft.com/en-US/windows-vista/Show-or-hide-file-name-extensions" target="_blank">Windows instructions</a>) or Finder (<a href="http://osxdaily.com/2012/01/13/show-filename-extensions-in-mac-os-x/" target="_blank">Mac instructions</a>).</p></div>
-      <p>File type advantages for your reference:</p>
-      <ul style="margin-top: -1em;">
-        <li>
-          <span class="keyword">gif</span> - smaller file size when used for line art, charts, and images with minimal colour variation
-        </li>
-        <li>
-          <span class="keyword">jpg</span> - smaller file size when used for photographs with lots of rich colours or gradients
-        </li>
-        <li>
-          <span class="keyword">png</span> - larger file size but has best quality and is great for images with transparent backgrounds
-        </li>
-      </ul>
-
-      <center>
-        <div class="sidenote">As a gif: 600 x 247, 8kb</div>
-        <img src="assets/img-example-gif.gif" />
-        <br />
-        <div class="sidenote">As a jpeg: 600 x 247, 9kb</div>
-        <img src="assets/img-example-jpg.jpg" />
-        <br />
-        <div class="sidenote">As a png: 600 x 247, 18kb</div>
-        <img src="assets/img-example-png.png" />
-      </center>
-
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
       <h2>Working with images <span style="font-size: 22px;">(Group exercise - Part 1)</span></h2>
       <p>Code along with me:</p>
       <ol class="spacey_list">
@@ -584,50 +553,6 @@ Hello&lt;br&gt;world
       </ol>
       <p class="centered" style="font-size: 2.5em;">This is an example of an <span class="keyword">absolute path</span>.</p>
       <p>It's "fully resolved" and starts with <code>http://</code> much like typing in a url into the browser's URL bar.</p>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
-      <h2>Working with images <span style="font-size: 22px;">(Group exercise - Part 2)</span></h2>
-      <p>Code along with me:</p>
-      <ol class="spacey_list">
-        <li>Return to our <code>img</code> tag in <code>index.html</code> and let's instead embed <code>llc.gif</code> which we have locally.</li>
-      </ol>
-      <p class="centered" style="font-size: 2.5em;">This is an example of a <span class="keyword">relative path</span>.</p>
-      <p>It's based on using the html file that you're working on as the starting point to find your image source.</p>
-      <p>Right now, <code>llc.gif</code> in the <strong>same folder</strong> as <code>index.html</code>.</p>
-      <ol class="spacey_list" start="2">
-        <li>Open the <a href="exercises/2_WORKING_WITH_IMAGES/images/images.html" target="_blank"><code>images.html</code></a> file in the <code>img</code> folder in Sublime Text.</li>
-        <li>Click on the above link to also view <code>images.html</code> in Chrome. </li>
-        <li>Note that there's already an <code>img</code> tag in <code>images.html</code> trying to embed <code>llc.gif</code>.</li>
-      </ol>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
-      <h2>Working with images <span style="font-size: 22px;">(Group exercise - Part 3)</span></h2>
-      <p>To write a <span class="keyword">relative path</span> that goes <strong><em>up</em></strong> a folder, start path with "<code>../</code>".</p>
-      <pre class="prettyprint">&lt;img src="<strong>../</strong>llc.gif" /&gt;</pre>
-      <p>Code along with me:</p>
-      <ol class="spacey_list">
-        <li>Return to our <code>img</code> tag in <code>images.html</code> and add <code>../</code> infront of <code>llc.gif</code>.</li>
-      </ol>
-      <br /><br /><br />
-      <hr />
-      <p class="sidenote">An aside: <code>../</code> can be used multiple times if you have many nested folders.</p>
-      <pre class="prettyprint">&lt;img src="<strong>../../../../</strong>llc.gif" /&gt;</pre>
-      <div>How many folders does this relative path go up?</div>
-      <div class="show-hint" onclick="javascript:showHint('nested-img-path'); this.style.display = 'none';">click here to show answer...</div>
-      <div id="nested-img-path" class="hint-solution">Four.</div>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
-      <h2>Working with images <span style="font-size: 22px;">(Group exercise - Part 4)</span></h2>
-      <p>However, it's best practice to organize your images into its own folder to keep your website's file structure tidy.</p>
-      <p class="sidenote">We tend to also organize JavaScript files into their own "js" folder and CSS files into their own "css" folder.</p>
-      <p>So let's <strong>move all of our images into the <code>images</code> folder</strong> of <code>2_WORKING_WITH_IMAGES</code>.</p>
-      <p>Uh oh! Now our image will be broken in <code>index.html</code> since the image is no longer in the same folder. Let's fix that...</p>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -643,12 +568,6 @@ Hello&lt;br&gt;world
       <p class="sidenote">An aside: You can go into multiple nested folders:</p>
       <pre class="prettyprint">&lt;img src="<strong>folder1/folder2/folder3/</strong>llc.gif" /&gt;</pre>
     </article>
-
-    <!--
-      Bonus: Give this file structure? How would you include the image?
-      <p class="sidenote">Transvering <em>over</em> to a parallel folder level would be:</p>
-      <pre>src="../folder/images/llc.gif"</pre>
-    -->
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
