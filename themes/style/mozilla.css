@@ -39,7 +39,7 @@
   font-weight: 600;
 }
 .deck-container .slide h1 {
-  color: #A32630;
+  color: #063446;
   position: static;
   padding: 1em 0 0.5em 0;
   line-height: 1;
@@ -415,7 +415,6 @@ This text &lt;br&gt;goes over&lt;br&gt;several lines.
   position: relative;
   text-shadow: none;
   font-style: normal;
-  font-weight:;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding: 30px;
