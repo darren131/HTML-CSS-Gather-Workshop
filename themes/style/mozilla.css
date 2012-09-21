@@ -319,11 +319,27 @@ This text &lt;br&gt;goes over&lt;br&gt;several lines.
   background: #FFF;
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
+  position: relative;
+  margin-top: 100px;
+  box-shadow: 0 -10px 10px -10px #CCC;
 }
+
+.deck-container .slide .fake-thimble:before {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  content: "";
+  display: block;
+  height: 50px;
+  width: 180px;
+  background: url("https://thimble.webmaker.org/media/friendlycode/img/thimble-logo.png") no-repeat;
+}
+
 
 .deck-container .slide .fake-thimble > div {
   float: left;
   width: 50%;
+  padding-top: 30px;
 }
 
 .deck-container .slide .fake-thimble > .right {
@@ -336,21 +352,41 @@ This text &lt;br&gt;goes over&lt;br&gt;several lines.
 }
 
 .deck-container .slide .fake-thimble > .right > .preview {
-  padding: 20px;
+  padding: 60px;
 }
 
 .deck-container .slide .fake-thimble > .right:after {
-  content: "Preview";
+  content: "Preview (what you see)";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -1px;
+  left: -1px;
   text-shadow: none;
   color: #EEE;
   padding: 10px;
   font-size: 18px;
   display: inline-block;
   background: #3985EE;
-  border-radius: 0 2px 0 2px;
+  border-radius: 2px 0 2px 0;
+}
+
+.deck-container .slide .fake-thimble > .left {
+  position: relative;
+}
+
+.deck-container .slide .fake-thimble > .left:after {
+  content: "Code (what you write)";
+  font-family: monospace;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  text-shadow: none;
+  color: #EEE;
+  padding: 10px;
+  font-size: 18px;
+  display: inline-block;
+  background: #00A38A;
+  border-radius: 2px 0 2px 0;
+  z-index: 1000;
 }
 
 .deck-container .slide .fake-thimble pre {
