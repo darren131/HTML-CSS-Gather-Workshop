@@ -257,6 +257,16 @@
   padding: 15px 0;
 }
 
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
 /*********************************************************
 * Grid
 */
@@ -287,4 +297,70 @@
 }
 .deck-container td {
   padding-bottom: 40px;
+}
+
+/*********************************************************
+Fake Thimble
+<div class="fake-thimble cf">
+  <div class="left">
+    <pre>
+This text &lt;br&gt;goes over&lt;br&gt;several lines.
+    </pre>
+  </div>
+  <div class="right">
+    <div class="preview">
+      This text <br>goes over<br> several lines.
+    </div>
+  </div>
+</div>
+*/
+
+.deck-container .slide .fake-thimble {
+  background: #FFF;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+}
+
+.deck-container .slide .fake-thimble > div {
+  float: left;
+  width: 50%;
+}
+
+.deck-container .slide .fake-thimble > .right {
+  box-shadow: -1px 0 0 0 #CCC;
+  position: relative;
+}
+
+.deck-container .slide .fake-thimble > .left {
+  box-shadow: inset -1px 0 0 0 #CCC;
+}
+
+.deck-container .slide .fake-thimble > .right > .preview {
+  padding: 20px;
+}
+
+.deck-container .slide .fake-thimble > .right:after {
+  content: "Preview";
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-shadow: none;
+  color: #EEE;
+  padding: 10px;
+  font-size: 18px;
+  display: inline-block;
+  background: #3985EE;
+  border-radius: 0 2px 0 2px;
+}
+
+.deck-container .slide .fake-thimble pre {
+  background: none;
+  border-radius: 0;
+  border: none;
+  color: #00A38A;
+}
+
+.deck-container .slide .fake-thimble pre:after,
+.deck-container .slide .fake-thimble pre:before {
+  display: none;
 }
