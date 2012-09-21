@@ -35,8 +35,8 @@
   opacity: 1;
 }
 .deck-container .slide h1, .deck-container .slide h2, .deck-container .slide h3, .deck-container .slide h4, .deck-container .slide h5, .deck-container .slide h6 {
-  font-family: 'OpenSansRegular', sans-serif;
-  font-weight: 400;
+  font-family: "ff-meta-web-pro", 'OpenSansRegular', sans-serif;
+  font-weight: 600;
 }
 .deck-container .slide h1 {
   color: #A32630;
@@ -414,11 +414,10 @@ This text &lt;br&gt;goes over&lt;br&gt;several lines.
   color: #FFF;
   position: relative;
   text-shadow: none;
-  font-family: georgia;
   font-style: normal;
+  font-weight:;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 1.2em;
   padding: 30px;
   background: rgb(30,87,153);
   background: -moz-linear-gradient(-45deg,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%);
