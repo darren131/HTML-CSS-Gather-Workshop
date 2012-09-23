@@ -49,6 +49,11 @@
   -ms-transform: none;
   transform: 0;
 }
+
+.deck-container .slide .vcenter h1 {
+  padding: 0;
+}
+
 .deck-container .slide h2 {
   font-size: 2em;
   color:rgb(62,62,62);
@@ -444,9 +449,16 @@ This text &lt;br&gt;goes over&lt;br&gt;several lines.
   border: 4px solid #3985EE;
   box-shadow: 0 10px 20px -10px #000;
   -moz-animation: bounce 1s infinite;
+  -webkit-animation: bounce 1s infinite;
 }
 
 @-moz-keyframes bounce {
+  0% { top: 0; }
+  50% { top: 15px; }
+  100% { top: 0; }
+}
+
+@-webkit-keyframes bounce {
   0% { top: 0; }
   50% { top: 15px; }
   100% { top: 0; }
@@ -456,8 +468,10 @@ This text &lt;br&gt;goes over&lt;br&gt;several lines.
   position: relative;
 }
 .hover-example:hover {
-  -moz-animation: bounce 1s infinite;
+-moz-animation: bounce 1s infinite;
+-webkit-animation: bounce 1s infinite;
   background: #2F67B7;
   color: #FFF;
   text-shadow: none;
 }
+
