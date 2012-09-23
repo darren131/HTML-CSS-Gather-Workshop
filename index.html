@@ -964,47 +964,16 @@ a:hover {
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
-      <h2>External CSS</h2>
-      <p>Instead of duplicating your <code>&lt;style&gt;</code> content for every webpage, make one single CSS document ending with a <code>.css</code> extension and link to it in the <code>&lt;head&gt;</code> tag instead of (or in addition to) a <code>&lt;style&gt;</code> tag.</p>
-<pre>
-&lt;head&gt;
-  <strong>&lt;link rel="stylesheet" href="styles.css" type="text/css"&gt;</strong>
-  &lt;style&gt;
-  body {
-    font-size: 14px;
-  }
-  &lt;/style&gt;
-&lt;/head&gt;
-</pre>
-
-      <p>Inside styles.css, there is <strong>no</strong> <code>&lt;style&gt;</code> tag:</p>
-<pre>
-body {
-  background-color: black;
-  color: white;
-  font-family: Helvetica, Arial, sans-serif;
-}
-h1 {
-  font-family: Georgia, "Times New Roman", serif;
-}
-</pre>
-
-    </article>
-
-    <!-- SLIDE: CSS -->
-    <article class='slide slide-list'>
       <h2>Exercise #4</h2>
-      <p>Use this time to create a <strong>School webpage</strong></p>
+      <p>Use this time to try applying some of what you've learned to the previous example</p>
       <ul>
-        <li>Visit <a href="https://thimble.webmaker.org/p/ezc/edit">https://thimble.webmaker.org/p/ezc/edit</a></li>
-        <li>Create a single <code>styles.css</code> file and link to this external stylesheet from all 3 webpages using the <code>&lt;link&gt;</code> tag. Consolidate all of your CSS into this external stylesheet.</li>
-        <li>If you've got extra time, try out some new CSS properties from the cheatsheet and other resources listed on the <a href="#slide-94">CSS resources slide</a>.</li>
+        <li>Visit <a href="https://thimble.webmaker.org/p/ey9/edit">https://thimble.webmaker.org/p/ey9/edit</a></li>
+        <li>Add a class to each link (you can apply a class to more than one link)</li>
+        <li>Try changing some of the fonts, colours, and other properties</li>
+        <li>Add :hover styles for your links too.</li>
       </ul>
-      <h3>Got questions?</h3>
-      <p>
-        Post them to Google Moderator: <a href="http://goo.gl/mod/c4cm" target="_blank" >http://goo.gl/mod/c4cm</a>
-      </p>
     </article>
+
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
@@ -1180,13 +1149,43 @@ aside {
       <p class="sidenote">Chart of many hex colours: <a href="http://www.visibone.com/color/chart_847.gif" target="_blank">http://www.visibone.com/color/chart_847.gif</a></p>
     </article>
 
+
+     <!-- SLIDE: CSS -->
+    <article class='slide slide-list'>
+      <h2>Including external CSS</h2>
+      <p>Instead of duplicating your <code>&lt;style&gt;</code> content for every webpage, make one single CSS document ending with a <code>.css</code> extension and link to it in the <code>&lt;head&gt;</code> tag instead of (or in addition to) a <code>&lt;style&gt;</code> tag.</p>
+<pre>
+&lt;head&gt;
+  <strong>&lt;link rel="stylesheet" href="styles.css" type="text/css"&gt;</strong>
+  &lt;style&gt;
+  body {
+    font-size: 14px;
+  }
+  &lt;/style&gt;
+&lt;/head&gt;
+</pre>
+
+      <p>Inside styles.css, there is <strong>no</strong> <code>&lt;style&gt;</code> tag:</p>
+<pre>
+body {
+  background-color: black;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+</pre>
+
+    </article>
+
     <!-- SLIDE: CSS -->
      <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Final Exercise</h2>
       <p>Use this time to create a <strong>School webpage!</strong></p>
       <ul>
-        <li>Visit <a href="https://thimble.webmaker.org/p/ey8/edit">https://thimble.webmaker.org/p/ey8/edit</a></li>
+        <li>Visit <a target="_blank" href="https://thimble.webmaker.org/p/ey8/edit">https://thimble.webmaker.org/p/ey8/edit</a></li>
         <li>First, let's add an external stylesheet that we can build on top of. The stylesheet to link to in this exercise is https://dl.dropbox.com/u/29163874/thimble/school-base.css (hint: put it above the <code>style</code> tag!)</li>
         <li>Try adding a google map by replacing the iframe with the embed code you've copied from <a href="http://maps.google.com">Google maps</a></li>
         <li>Try changing the school colours to match your own!</li>
@@ -1200,14 +1199,10 @@ aside {
 
     <!-- SLIDE: CSS -->
     <article class='slide'>
-      <h2>Bonus: Try out web fonts</h2>
-      <p>When you get bored of Arial and Georgia, go to the <a href="http://www.google.com/webfonts/" target="_blank">Google Web Fonts</a> website and find a font that you like.</p>
-      <ol>
-        <li>Click on the "Quick-use" button for that font.</li>
-        <li>Scroll down to find the supplied <code>&lt;link&gt;</code> tag. Copy and paste it into your own HTML file.</li>
-        <li>Integrate the fonts into your CSS by using their supplied <code>font-family</code>. For example, add their <code>font-family</code> to your <code>h1</code> CSS selector.</li>
-        <li>Make sure your files are saved and view your web page in the browser. New fonts are that easy!</li>
-      </ol>
+      <h2>Bonus: Stuck in the 90s</h2>
+      <p>Visit <a href="https://thimble.webmaker.org/en-US/projects/stuck/edit">https://thimble.webmaker.org/en-US/projects/stuck/edit</a> to apply some of your design skills to this awful, ugly page. Read through the comments and ask for help if you get stuck!</p>
+      <img src="http://dl.dropbox.com/u/29163874/Screenshots/0l.png">
+   
     </article>
 
     <!-- SLIDE: CSS -->
