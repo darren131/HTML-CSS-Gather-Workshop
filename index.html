@@ -694,22 +694,6 @@ Hello&lt;br&gt;world
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
-      <h2>Where to put your CSS</h2>
-      <p>CSS can live in two places &ndash; an external stylesheet, or at the top of your HTML page</p>
-      <p>Since we're using Thimble, we'll be placing all of our CSS in the <code>&lt;style&gt;</code> tag (placed between the <code>&lt;head&gt;</code> tags)</p>
-
-<pre>
-&lt;head&gt;
-  &lt;style&gt;
-    <span class="omg">Style goes here!!!!!!!</span>
-  &lt;/style&gt;
-&lt;/head&gt;
-</pre>
-
-    </article>
-
-    <!-- SLIDE: CSS -->
-    <article class='slide slide-list'>
       <h2>CSS selectors and properties</h2>
       <p>Here's a CSS declaration dissected:</p>
       <p class="centered"><img src="assets/css.png" /></p>
@@ -731,7 +715,42 @@ Hello&lt;br&gt;world
       </ul>
     </article>
 
-    <!-- SLIDE: CSS -->
+       <!-- SLIDE: CSS -->
+    <article class='slide slide-list'>
+      <h2>Where to put your CSS</h2>
+      <p>CSS can live in two places &ndash; an external stylesheet, or at the top of your HTML page</p>
+      <p>Since we're using Thimble, we'll be placing all of our CSS in the <code>&lt;style&gt;</code> tag (placed between the <code>&lt;head&gt;</code> tags)</p>
+      <p>See an example here: <a href="https://thimble.webmaker.org/p/eyb/edit">https://thimble.webmaker.org/p/eyb/edit</a></p>
+
+<pre>
+&lt;head&gt;
+  &lt;style&gt;
+    <span class="omg">Style goes here!!!!!!!</span>
+  &lt;/style&gt;
+&lt;/head&gt;
+</pre>
+
+    </article>
+
+
+      <!-- SLIDE: CSS -->
+    <article class='slide slide-list'>
+      <h2>Our first selector: body</h2>
+      <p><code>body</code> is a selector that applies styles to the entire page, and all of its content. All elements in the page will <em>inherit</em> the styles you define.</p>
+
+<pre>
+&lt;head&gt;
+  &lt;style&gt;
+    <span class="omg">body</span> {
+     font-family: sans-serif;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+</pre>
+
+    </article>
+
+      <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Our first style: background-color</h2>
       <p><code>background-color</code> is a property that can be applied to any tag, such as the <code>body</code>.</p>
@@ -774,6 +793,7 @@ body {
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Changing the font colour</h2>
+      <p>Take a look at <a href="https://thimble.webmaker.org/p/eyv/edit">https://thimble.webmaker.org/p/eyv/edit</a></p>
       <p>Now the text is a bit hard to read on the gray background. Because the <code>&lt;body&gt;</code> tag is the highest possible visible HTML tag, the <code>body</code> selector will also allow us to target the font color on the <em>entire</em> page.</p>
 <pre>body { background-color: gray; <strong>color: white;</strong> }</pre>
     </article>
@@ -899,7 +919,7 @@ a:hover {
       <h2>CSS classes</h2>
       <p>Wait! What happens when we add another link to the page and it's not part of our navigation?
       <span class="sidenote">Putting all the styles inline wouldn't be wise...</span></p>
-<textarea class="coder-editor">
+<pre>
 &lt;style&gt;
 a {
   border: 1px solid black;
@@ -922,9 +942,7 @@ a:hover {
 &lt;p&gt;Follow me on
   &lt;a href="http://twitter.com/pearlchen" target="_blank"&gt;Twitter&lt;/a&gt;!
 &lt;/p&gt;
-</textarea>
-      <br clear="all" />
-      <p class="sidenote">Now that's a lot of CSS! What if you change you mind and decide that the background color should be blue now? Plus you can't apply pseudo selectors like <code>:hover</code> inline.</p>
+</pre>
     </article>
 
    <!-- SLIDE: CSS -->
@@ -1199,7 +1217,7 @@ aside {
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
-      <h2>CSS id's</h2>
+      <h2>CSS ids</h2>
       <p>CSS classes are great when you want to re-apply the same style to multiple HTML elements but sometimes you need to only target an HTML container <strong>once</strong>. This is where an <span class="keyword">ID</span> is useful.</p>
       <ul>
         <li>Use a <strong>hash</strong> (<code>#</code>) to define CSS selectors that are IDs.<br />
@@ -1213,7 +1231,7 @@ aside {
 
         <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
-      <h2>CSS id's</h2>
+      <h2>CSS ids</h2>
       <p>Let's add <code>#centered_on_page</code> and apply the id to the <code>div</code> container immediately after the opening <code>&lt;body&gt;</code> tag in <code>index.html</code>.</p>
 <pre>
 #centered_on_page {
