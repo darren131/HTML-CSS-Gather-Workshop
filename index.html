@@ -554,20 +554,6 @@ Hello&lt;br&gt;world
     </article>
 
     <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>Working with images <span style="font-size: 22px;">(Group exercise - Part 5)</span></h2>
-      <p>To write a <span class="keyword">relative path</span> that goes <strong><em>into</em></strong> a folder, start path with the <strong>folder name</strong> followed by a backslash (<code>/</code>).</p>
-      <pre class="prettyprint">&lt;img src="<strong>images/</strong>llc.gif"&gt;</pre>
-      <ol class="spacey_list">
-        <li>Return to <code>index.html</code> and add <code>images/</code> infront of <code>llc.gif</code>.</li>
-      </ol>
-      <br /><br /><br />
-      <hr />
-      <p class="sidenote">An aside: You can go into multiple nested folders:</p>
-      <pre class="prettyprint">&lt;img src="<strong>folder1/folder2/folder3/</strong>llc.gif"&gt;</pre>
-    </article>
-
-    <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>Hyperlinks</h2>
       <p>The <code>&lt;a&gt;</code> <em>anchor</em> tag is used to tell the browser that we want to link to somewhere else on our site or on the web.</p>
@@ -582,13 +568,13 @@ Hello&lt;br&gt;world
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>Hyperlinks</h2>
-      <p>We need a way of setting the URL <span class="sidenote">(e.g. <code>http://ladieslearningcode.com</code>)</span> that the browser will request when someone clicks on the link.</p>
+      <p>We need a way of setting the URL <span class="sidenote">(e.g. <code>http://webmaker.org</code>)</span> that the browser will request when someone clicks on the link.</p>
       <p>Once again, we need to use <span class="keyword">attributes</span>.</p>
-      <pre class="prettyprint">Visit &lt;a <strong>href="http://ladieslearningcode.com"</strong>&gt;Ladies Learning Code&lt;/a&gt;.</pre>
-      <p>Visit <a href="http://ladieslearningcode.com" target="_blank">Ladies Learning Code</a>.</p>
+      <pre class="prettyprint">Visit &lt;a <strong>href="http://webmaker.org"</strong>&gt;webmaker.org&lt;/a&gt;.</pre>
+      <p>Visit <a href="http://webmaker.org" target="_blank">webmaker.org</a>.</p>
       <ul>
         <li><code>href</code> is the <em>attribute</em></li>
-        <li><code>http://ladieslearningcode.com</code> is the <em>value</em> of that attribute</li>
+        <li><code>http://webmaker.org</code> is the <em>value</em> of that attribute</li>
         <li>And remember that the <strong>clickable text goes in between</strong> the opening and closing <code>a</code> tags.</li>
       </ul>
     </article>
@@ -597,17 +583,23 @@ Hello&lt;br&gt;world
     <article class='slide slide-list'>
       <h2>Exercise #2 (10-15 minutes)</h2>
       <ol class="spacey_list">
-        <li>Continue using <code>index.html</code> from the <code>2_WORKING_WITH_IMAGES</code> folder in Sublime Text.</li>
-        <li>Create a text link using the <code>&lt;a&gt;</code> tag that points to "http://ladieslearningcode.com".</li>
-        <li>Using your knowledge of the <code>&lt;a&gt;</code> tag, try to create a <em>clickable image</em> using both the <code>&lt;img&gt;</code> and <code>&lt;a&gt;</code> tags. Clicking on the image should open up "http://ladieslearningcode.com".<br />
+        <li>Visit <a href="https://thimble.webmaker.org/p/eyr/edit">https://thimble.webmaker.org/p/eyr/edit</a> in your browser</li>
+        <li>Create a text link using the <code>&lt;a&gt;</code> tag that points to "http://webmaker.org".</li>
+        <li>Using your knowledge of the <code>&lt;a&gt;</code> tag, try to create a <em>clickable image</em> by creating two or three more <code>&lt;img&gt;</code> tags and putting them <em>inside</em> <code>&lt;a&gt;</code> tags. Clicking on the image should open up "http://webmaker.org".<br />
         <span class="sidenote">(Hint: This involves nested HTML tags.)</span>
         </li>
       </ol>
-      <p class="sidenote">Make sure to save <code>index.html</code> after changes have been made (Ctrl/Cmd+S) and before confirming your edits in Chrome.</p>
-      <h3>Got questions?</h3>
-      <p>
-        Post them to Google Moderator: <a href="http://goo.gl/mod/c4cm" target="_blank" >http://goo.gl/mod/c4cm</a>
-      </p>
+      <h4>Make sure to publish your work, and ask the volunteers for help if you need it!</h4>
+    </article>
+
+        <!-- SLIDE: HTML -->
+    <article class='slide slide-list'>
+      <h2>Adding webpages to your webpage</h2>
+      <p>As time goes on, it has become easier and easier to include <strong>parts of other websites</strong> on to your own website. We call this "embedding".</p>
+      <p>From YouTube, you can find an <strong>Embed Code</strong> to put into your website <span class="sidenote">(click on "Share" button below video, then "Embed")</span> and YouTube's servers do all the rest of the work via the <code>iframe</code> tag.</p>
+      <pre class="prettyprint">&lt;iframe width="560" height="315" src="http://www.youtube.com/embed/tlnFyjpV5Wo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</pre>
+      <iframe width="560" height="315" src="http://www.youtube.com/embed/tlnFyjpV5Wo" frameborder="0" allowfullscreen></iframe>
+      <p>Adding a Google Map is similiar. <a href="assets/google_map_embed.jpg" target="_blank">Click here for instructional screenshot.</a></p>
     </article>
 
     <article class='slide slide-list'>
@@ -658,15 +650,6 @@ Hello&lt;br&gt;world
       </p>
     </article>
 
-    <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
-      <h2>Bonus: Add video to your webpage</h2>
-      <p>As time goes on, it has become easier and easier to embed multimedia content into websites.</p>
-      <p>From YouTube, you can find an <strong>Embed Code</strong> to put into your website <span class="sidenote">(click on "Share" button below video, then "Embed")</span> and YouTube's servers do all the rest of the work via the <code>iframe</code> tag.</p>
-      <pre class="prettyprint">&lt;iframe width="560" height="315" src="http://www.youtube.com/embed/tlnFyjpV5Wo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</pre>
-      <iframe width="560" height="315" src="http://www.youtube.com/embed/tlnFyjpV5Wo" frameborder="0" allowfullscreen></iframe>
-      <p>Adding a Google Map is similiar. <a href="assets/google_map_embed.jpg" target="_blank">Click here for instructional screenshot.</a></p>
-    </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
