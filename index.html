@@ -883,11 +883,11 @@ h2 { font-family: Courier; font-size: 22px; <strong>font-weight: normal;</strong
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
-      <h2>CSS interactions &amp; pseudo selectors</h2>
+      <h2>CSS interactions for links</h2>
       <p>CSS is also able to handle some basic UI interactions in our sites, such as allowing a mouse over or "hover" state on various elements. This is frequently done with items such as links.</p>
       <p>As part of your selector, you need to use the <code>:hover</code> <span class="keyword">pseudo selector</span>.</p>
 
-<textarea class="coder-editor">
+<pre>
 &lt;style&gt;
 a {
   border: 1px solid black;
@@ -896,21 +896,16 @@ a {
   color: white;
   text-decoration: none;
   margin: 15px 10px 0 0;
-
   border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
 }
 
-a:hover {
-
-}
+<span class="omg">a:hover {
+  color: red;
+}</span>
 &lt;/style&gt;
 
-&lt;a href="index.html"&gt;Home&lt;/a&gt;
-&lt;a href="about.html"&gt;About&lt;/a&gt;
-&lt;a href="contact.html"&gt;Contact&lt;/a&gt;
-</textarea>
+&lt;a href="http://wwebmaker.org"&gt;Webmaker&lt;/a&gt;
+</pre>
 
     </article>
 
@@ -1029,7 +1024,7 @@ h1 {
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
-      <h2>Exercise #4 (20 minutes)</h2>
+      <h2>Exercise #4</h2>
       <p>Use this time to create a <strong>School webpage</strong></p>
       <ul>
         <li>Visit <a href="https://thimble.webmaker.org/p/ezc/edit">https://thimble.webmaker.org/p/ezc/edit</a></li>
@@ -1096,8 +1091,8 @@ h1 {
 <pre>&lt;header&gt;
   &lt;nav&gt;
     &lt;div&gt;Home&lt;/div&gt;
-    &lt;div"&gt;About&lt;/div&gt;
-    &lt;div"&gt;Contact&lt;/div&gt;
+    &lt;div&gt;About&lt;/div&gt;
+    &lt;div&gt;Contact&lt;/div&gt;
   &lt;/nav&gt;
 &lt;/header&gt;
 &lt;section&gt;
@@ -1116,35 +1111,13 @@ h1 {
 
     <article class='slide slide-list'>
       <h2>Semantic HTML Tags</h2>
+      <p>There are two reasons we use semantic HTML tags:</p>
+      <ol>
+        <li>To indiciate the kind of content</li>
+        <li>To indicate the structure of the page</li>
+      </ol>
       <p>This helps <span class="keyword">web crawlers</span> from search engines like Google or Bing better understand your content.</p>
       <p>Even better, it helps <strong>you</strong> from missing a closing <code>&lt;/div&gt;</code> tag and makes your HTML easier to read for everyone.</p>
-    </article>
-
-    <article class='slide slide-list'>
-      <h2>Preparing for our group exercise</h2>
-      <p>Using <code>index.html</code> from the <code>website</code> folder, let's update it with the code below.</p>
-      <p>It should replace everything in between the opening and closing <code>&lt;body&gt;</code> tags.</p>
-<pre>&lt;div&gt;
-  &lt;header&gt;
-    &lt;nav&gt;
-      &lt;a href="index.html"&gt;Home&lt;/a&gt;
-      &lt;a href="about.html"&gt;About&lt;/a&gt;
-      &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
-    &lt;/nav&gt;
-  &lt;/header&gt;
-  &lt;section&gt;
-    Welcome to my blog!
-    &lt;article&gt;[...Blog Post...]&lt;/article&gt;
-    &lt;article&gt;[...Blog Post...]&lt;/article&gt;
-  &lt;/section&gt;
-  &lt;aside&gt;
-    [...Sidebar Ad...]
-  &lt;/aside&gt;
-  &lt;footer&gt;
-    Copyright 2012
-  &lt;/footer&gt;
-&lt;/div&gt;
-</pre>
     </article>
 
     <!-- SLIDE: CSS -->
@@ -1195,28 +1168,6 @@ aside {
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
-      <h2>Getting columns to be side-by-side</h2>
-      <p>Block-style HTML containers like <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;aside&gt;</code> automatically start on a new line.</p>
-      <p>To get our two columns to be side-by-side, use the <code>float</code> property. Values can be <code>left</code>, <code>right</code>, or <code>none</code>.</p>
-<pre>
-section {
-  width: 560px;
-  padding: 30px;
-  border: 1px solid gray;
-  <strong>float: left;</strong>
-}
-
-aside {
-  margin-left: 20px;
-  width: 300px;
-  border: 1px solid gray;
-  <strong>float: left;</strong>
-}
-</pre>
-    </article>
-
-    <!-- SLIDE: CSS -->
-    <article class='slide slide-list'>
       <h2>CSS ids</h2>
       <p>CSS classes are great when you want to re-apply the same style to multiple HTML elements but sometimes you need to only target an HTML container <strong>once</strong>. This is where an <span class="keyword">ID</span> is useful.</p>
       <ul>
@@ -1261,14 +1212,21 @@ aside {
     </article>
 
     <!-- SLIDE: CSS -->
-    <article class='slide'>
-      <h2>Hands-on time (now until end)</h2>
-      <p>Use this time to apply CSS to your web page. Review the afternoon's slides and experiment with some of the properties on the cheatsheet. If you're stuck, here are some suggestions:</p>
+     <!-- SLIDE: CSS -->
+    <article class='slide slide-list'>
+      <h2>Final Exercise</h2>
+      <p>Use this time to create a <strong>School webpage!</strong></p>
       <ul>
-        <li>Apply <code>width</code>s and <code>float</code>s to <code>&lt;section&gt;</code> and <code>&lt;aside&gt;</code> to make a standard 2-column layout.</li>
-        <li>Apply some custom colours to your text in any of your web pages.</li>
-        <li>Research the <code>background-image</code> property and add a background image to webpages.</li>
+        <li>Visit <a href="https://thimble.webmaker.org/p/ey8/edit">https://thimble.webmaker.org/p/ey8/edit</a></li>
+        <li>First, let's add an external stylesheet that we can build on top of. The stylesheet to link to in this exercise is https://dl.dropbox.com/u/29163874/thimble/school-base.css (hint: put it above the <code>style</code> tag!)</li>
+        <li>Try adding a google map by replacing the iframe with the embed code you've copied from <a href="http://maps.google.com">Google maps</a></li>
+        <li>Try changing the school colours to match your own!</li>
+        <li>Search on google for some fun facts about your school... or make some up.</li>
+        <li>Don't forget the images and links at the bottom! Try adding a special :hover style to your page</a>
+        <li>If you've got extra time, try out some new CSS properties from the cheatsheet and other resources listed on the <a href="#slide-94">CSS resources slide</a>.</li>
+        <li>Hint: if you're stuck, take a look at https://thimble.webmaker.org/p/ezc/edit</a>
       </ul>
+      <h3>Got questions? Ask the volunteers to help you out!</h3>
     </article>
 
     <!-- SLIDE: CSS -->
