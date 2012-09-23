@@ -2,7 +2,7 @@
 /*********************************************************
 * Main styles
 */
-  
+
 .deck-container {
   font-family: 'OpenSansRegular', sans-serif;
   font-size: 1.75em;
@@ -277,7 +277,7 @@
 
 .cf:before,
 .cf:after {
-    content: " "; 
+    content: " ";
     display: table;
 }
 
@@ -483,3 +483,8 @@ This text &lt;br&gt;goes over&lt;br&gt;several lines.
   text-shadow: none;
 }
 
+table.browser-grid td {
+  padding-right: 2em;
+  padding-bottom: 0;
+  text-align: center;
+}
