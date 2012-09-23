@@ -33,13 +33,12 @@
 <!-- Begin slides. Just make elements with a class of slide. -->
 
     <article class='slide'>
-      <h1>Introduction to <br> HTML &amp; CSS</h1>
+      <h1 class="n-flow">Introduction to <br> HTML &amp; CSS</h1>
       <div class="instructor_holder">
         <h3>Your instructors today</h3>
         <div class="row">
 
           <div>
-            <img class="align-left" src="assets/pearl_avatar.png" width="72" height="72" alt="pearl chen" /></p>
             <h4>Jon Buckley</h4>
             jbuck [at] mozillafoundation.org
             <br>
@@ -47,7 +46,6 @@
           </div>
 
           <div>
-            <img class="align-left" src="assets/pearl_avatar.png" width="72" height="72" alt="pearl chen" /></p>
             <h4>Kate Hudson</h4>
             kate [at] mozillafoundation.org
             <br>
@@ -60,7 +58,7 @@
 
     <!-- SLIDE: Development Environment -->
     <article class='slide'>
-      <h1>Development Environment</h1>
+        <h1>Development Environment</h1>
     </article>
 
     <!-- SLIDE: Web Browser -->
@@ -148,9 +146,11 @@
 
     <!-- new slide -->
     <article class='slide'>
-      <h1>Dive into HTML</h1>
-      <p>The content layer</p>
-      <p><img src="assets/TRIAD-html.gif" width="267" height="241" alt="content layer" /></p>
+      <div class="vcenter">
+        <h1>Dive into HTML</h1>
+        <p>The content layer</p>
+        <p><img src="assets/TRIAD-html.gif" width="267" height="241" alt="content layer" /></p>
+      </div>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -418,7 +418,7 @@
       <h2>Void (or empty) HTML Tags</h2>
       <p><span class="keyword">Void tags</span> don't format content -- instead they are used to render or embed objects in our page.</p>
       <p>These tags <strong>do not</strong> come in pairs like <code>h1</code> or <code>p</code> tags. You only type the tag once.</p>
-      <p>In some versions of HTML <span class="sidenote">(specifically XHTML... remember <code>DOCTYPE</code>?)</span> they "self-close" with a back slash (<code>/</code>) immediately before the left angled bracket (<code>&gt;</code>). The most often used example of this is the <code>&lt;br /&gt;</code> tag used to create a <strong>line break</strong>.</p>
+      <p>In some versions of HTML <span class="sidenote">(specifically XHTML... remember <code>DOCTYPE</code>?)</span> they "self-close" with a back slash (<code>/</code>) immediately before the left angled bracket (<code>&gt;</code>). The most often used example of this is the <code>&lt;br&gt;</code> tag used to create a <strong>line break</strong>.</p>
 
       <div class="fake-thimble cf">
         <div class="left">
@@ -442,10 +442,10 @@ This text &lt;br&gt;goes over&lt;br&gt;several lines.
         <div>
           <h3>Void tags</h3>
           <code>&lt;hr&gt;</code>&ndash; horizontal rule<br />
-          <code>&lt;br&gt;</code> or <code>&lt;br /&gt;</code> - line break<br />
-          <code>&lt;input&gt;</code> or <code>&lt;input /&gt;</code> - text input boxes<br />
+          <code>&lt;br&gt;</code> or <code>&lt;br&gt;</code> - line break<br />
+          <code>&lt;input&gt;</code> or <code>&lt;input&gt;</code> - text input boxes<br />
           <hr />
-          <code>&lt;img&gt;</code> or <code>&lt;img /&gt;</code> - an image <em>*We'll get to this one very soon.</em><br />
+          <code>&lt;img&gt;</code> or <code>&lt;img&gt;</code> - an image <em>*We'll get to this one very soon.</em><br />
         </div>
       </div>
       <div class="fake-thimble cf">
@@ -479,7 +479,7 @@ Hello&lt;br&gt;world
       </ul>
       <p>Consider the <code>img</code> tag. Not very exciting right?</p>
 <pre>&lt;p&gt;Kicking up HTML a notch.&lt;/p&gt;
-&lt;img /&gt;
+&lt;img&gt;
 &lt;p&gt;Do you agree?&lt;/p&gt;</pre>
     </article>
 
@@ -489,7 +489,7 @@ Hello&lt;br&gt;world
       <p>Sometimes we need to define data that we don't see right away but it's used by the browser to help render special content like hyperlinks, images, or video.</p>
       <p class="sidenote">Here's that same <code>img</code> tag but now it's using a tag <span class="keyword">attribute</span> to tell my webpage where to find a source image:</p>
 <pre>&lt;p&gt;Kicking up HTML a notch.&lt;/p&gt;
-&lt;img src="http://goo.gl/7eSU5" /&gt;
+&lt;img src="http://goo.gl/7eSU5"&gt;
 &lt;p&gt;Do you agree?&lt;/p&gt;</pre>
       <br clear="all" />
       <p>Remember, it's <strong>not</strong> <code>&lt;img&gt;http://goo.gl/7eSU5&lt;/img&gt;</code></p>
@@ -499,7 +499,7 @@ Hello&lt;br&gt;world
     <article class='slide'>
       <h2>Working with images</h2>
       <p>Let's look at that again: images are an example of a <span class="keyword">void tag</span> <strong>with</strong> an <span class="keyword">attribute</span>.</p>
-      <pre class="prettyprint">&lt;img src="http://goo.gl/7eSU5" /&gt;</pre>
+      <pre class="prettyprint">&lt;img src="http://goo.gl/7eSU5"&gt;</pre>
       <ul>
         <li><code>src</code> is the <em>attribute</em></li>
         <li><code>http://goo.gl/7eSU5</code> is the <em>value</em> of that attribute<br />
@@ -518,11 +518,11 @@ Hello&lt;br&gt;world
       </ul>
       <hr />
       <p class="sidenote">For example, without <code>width</code> and <code>height</code> attributes, the browser displays image at original size.</p>
-      <pre class="prettyprint">&lt;img src="http://goo.gl/7eSU5" /&gt;</pre>
+      <pre class="prettyprint">&lt;img src="http://goo.gl/7eSU5"&gt;</pre>
       <img src="http://goo.gl/7eSU5" />
       <hr />
       <p class="sidenote">Now with a manipulated width and height (about 50% smaller):</p>
-      <pre class="prettyprint">&lt;img src="http://goo.gl/7eSU5" width="320" height="262" /&gt;</pre>
+      <pre class="prettyprint">&lt;img src="http://goo.gl/7eSU5" width="320" height="262"&gt;</pre>
       <img src="http://goo.gl/7eSU5" width="320" height="262" />
     </article>
 
@@ -538,7 +538,7 @@ Hello&lt;br&gt;world
   src="http://goo.gl/7eSU5"
   width="160"
   height="131"
-  alt="HTML LOLcat" /&gt;</pre>
+  alt="HTML LOLcat"&gt;</pre>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -546,27 +546,25 @@ Hello&lt;br&gt;world
       <h2>Working with images <span style="font-size: 22px;">(Group exercise - Part 1)</span></h2>
       <p>Code along with me:</p>
       <ol class="spacey_list">
-        <li>Open <a href="exercises/2_WORKING_WITH_IMAGES/index.html" target="_blank"><code>exercises/2_WORKING_WITH_IMAGES/index.html</code></a> in Sublime Text. <span class="sidenote">(It's simply a copy of <code>barebones.html</code>.)</span></li>
-        <li>Click on the above link to also view <code>index.html</code> in Chrome. </li>
+        <li>Open <a href="https://thimble.webmaker.org/p/eyj/edit" target="_blank"><code>https://thimble.webmaker.org/p/eyj/edit</code></a> in your browser</li>
         <li>Use the <code>img</code> tag to embed an image of our fave LOL cat using <code>http://goo.gl/mod/c4cm</code> for the value of the <code>src</code> attribute.</li>
-        <li>Save and refresh the webpage in the browser to make sure you got it right.</li>
+        <li>You can also change the text if you like!</li>
+        <li>Save and check out the preview panel to make sure you got it right.</li>
       </ol>
-      <p class="centered" style="font-size: 2.5em;">This is an example of an <span class="keyword">absolute path</span>.</p>
-      <p>It's "fully resolved" and starts with <code>http://</code> much like typing in a url into the browser's URL bar.</p>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>Working with images <span style="font-size: 22px;">(Group exercise - Part 5)</span></h2>
       <p>To write a <span class="keyword">relative path</span> that goes <strong><em>into</em></strong> a folder, start path with the <strong>folder name</strong> followed by a backslash (<code>/</code>).</p>
-      <pre class="prettyprint">&lt;img src="<strong>images/</strong>llc.gif" /&gt;</pre>
+      <pre class="prettyprint">&lt;img src="<strong>images/</strong>llc.gif"&gt;</pre>
       <ol class="spacey_list">
         <li>Return to <code>index.html</code> and add <code>images/</code> infront of <code>llc.gif</code>.</li>
       </ol>
       <br /><br /><br />
       <hr />
       <p class="sidenote">An aside: You can go into multiple nested folders:</p>
-      <pre class="prettyprint">&lt;img src="<strong>folder1/folder2/folder3/</strong>llc.gif" /&gt;</pre>
+      <pre class="prettyprint">&lt;img src="<strong>folder1/folder2/folder3/</strong>llc.gif"&gt;</pre>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -1005,7 +1003,7 @@ a:hover {
       <p>Instead of duplicating your <code>&lt;style&gt;</code> content for every webpage, make one single CSS document ending with a <code>.css</code> extension and link to it in the <code>&lt;head&gt;</code> tag instead of (or in addition to) a <code>&lt;style&gt;</code> tag.</p>
 <pre>
 &lt;head&gt;
-  <strong>&lt;link rel="stylesheet" href="styles.css" type="text/css" /&gt;</strong>
+  <strong>&lt;link rel="stylesheet" href="styles.css" type="text/css"&gt;</strong>
   &lt;style&gt;
   body {
     font-size: 14px;
@@ -1031,9 +1029,9 @@ h1 {
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Exercise #4 (20 minutes)</h2>
-      <p>Use this time to apply CSS to your 3-page website.</p>
+      <p>Use this time to create a <strong>School webpage</strong></p>
       <ul>
-        <li>Update your navigation in <code>index.html</code> to look more button-like.</li>
+        <li>Visit <a href="https://thimble.webmaker.org/p/ezc/edit">https://thimble.webmaker.org/p/ezc/edit</a></li>
         <li>Create a single <code>styles.css</code> file and link to this external stylesheet from all 3 webpages using the <code>&lt;link&gt;</code> tag. Consolidate all of your CSS into this external stylesheet.</li>
         <li>If you've got extra time, try out some new CSS properties from the cheatsheet and other resources listed on the <a href="#slide-94">CSS resources slide</a>.</li>
       </ul>
