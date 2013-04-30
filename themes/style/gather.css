@@ -1,10 +1,11 @@
-@import "../fonts/fonts.css";
+@import url("http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic");
+
 /*********************************************************
 * Main styles
 */
 
 .deck-container {
-  font-family: 'OpenSansRegular', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 1.75em;
   line-height: 1.4;
   background:url(../images/bg-sandstone-2.png);
@@ -35,7 +36,6 @@
   opacity: 1;
 }
 .deck-container .slide h1, .deck-container .slide h2, .deck-container .slide h3, .deck-container .slide h4, .deck-container .slide h5, .deck-container .slide h6 {
-  font-family: "ff-meta-web-pro", 'OpenSansRegular', sans-serif;
   font-weight: 600;
 }
 .deck-container .slide h1 {
@@ -61,11 +61,13 @@
     text-align: center;
   }
 
+.title-slide {
+	background: orange;
+	}
 
 .deck-container .slide h2 {
   font-size: 2em;
   color:rgb(62,62,62);
-  font: "ff-meta-web-pro", 'OpenSansRegular', sans-serif;
   border-bottom: none;
   padding-top: 100px;
   padding-bottom: 30px;
