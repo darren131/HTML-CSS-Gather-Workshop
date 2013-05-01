@@ -110,30 +110,57 @@
     </article>
 
     <article class='slide'>
-      <h2>How the web works</h2>
+      <h2>What's in a URL</h2>
+      <h2><span class="highlight h-1">protocol</span>://<span class="highlight h-2">server</span>/<span class="highlight h-3">path</span></h2>
       <ul>
-        <li>Browser request page from ISP</li>
-        <li>ISP request file from server (HTTP)</li>
-        <li>ISP sends file to browser</li>
-        <li>Browser renders page</li>
+          <li><span class="highlight h-1">How</span> e.g. http</li>
+          <li><span class="highlight h-2">Where</span> e.g. gathergather.co.nz</li>
+          <li><span class="highlight h-3">What</span> e.g. /workshops</li>
       </ul>
     </article>
 
     <article class='slide'>
-      <h2>HTTP Requests</h2>
-      <ul>
-        <li>Lots of servers and pipes</li>
-        <li>Relies on DNS</li>
-      </ul>
+      <h2>What happens?</h2>
+      <img src="assets/diagram_http.png">
     </article>
 
     <article class='slide'>
-      <h2>DNS</h2>
+      <h2>A request bounces</h2>
+      <img src="assets/trace_route.png">
+    </article>
+
+    <article class='slide'>
+      <h2>How is the web "open"?</h2>
+      <p>There are a number of organisations that exists with the sole purpose of maintaining the "open-ness" of the web. What does that mean? Who are they?</p>
       <ul>
-        <li>Nameservers</li>
-        <li>IP Addresses</li>
-        <li>Bouncing around</li>
+        <li>Web Standards — <a href="http://w3c.org">W3C</a></li>
+        <li>Net Neutrality — <a href="http://internetnz.net.nz">InternetNZ</a></li>
       </ul>
+    </article>
+
+    <article class='slide title-slide'>
+      <h1>Net Neutrality</h1>
+    </article>
+
+    <article class='slide'>
+      <h2>All networks are equal</h2>
+      <p>There are political and economical gains to be made by treating networks differently:</p>
+      <ul>
+        <li>An ISP can charge extra to allow access to your favourite website, e.g. Facebook</li>
+        <li>A government can censor access to information, e.g. North Korea</li>
+        <li>Telecom, who owns the Souther Cross Cable, could slow down other ISPs' international requests</li>
+      </ul>
+      <p>Why could this be a bad thing?</p>
+    </article>
+
+    <article class='slide'>
+      <h2>The solution</h2>
+      <p>Organisations, like <a href="http://internetnz.net.nz">InternetNZ</a>, promote the open web. This means that ISPs must treat all requests equally. They can't favour one network over another.</p>
+    </article>
+
+
+    <article class='slide title-slide'>
+      <h1>Web Standards</h1>
     </article>
 
 
@@ -145,9 +172,9 @@
       </p>
       <table width="100%">
       <tr>
-      <td width="33%" class="centered"><strong>HTML</strong> (Hypertext Markup Language) <br>
+      <td width="33%" class="centered"><strong>HTML</strong> <small>(Hypertext Markup Language)</small> <br>
           is the markup language.</td>
-      <td width="33%" class="centered"><strong>CSS</strong> (Cascading Style Sheets) <br>
+      <td width="33%" class="centered"><strong>CSS</strong> <small>(Cascading Style Sheets)</small> <br>
           is the style sheet language.</td>
       <td width="33%" class="centered"><strong>JavaScript</strong><br>
           is the programming language.</td>
@@ -158,9 +185,9 @@
       <td class="centered"><img src="assets/TRIAD-js.gif" width="274" height="241" alt="Behaviour Layer" /></td>
       </tr>
             <tr>
-      <td class="centered">It should define the <strong>content</strong>.</td>
-      <td class="centered">It should define the <strong>presentation</strong></td>
-      <td class="centered">It should define <strong>behaviour</strong>.</td>
+      <td class="centered">It should define the<br><strong>semantic structure</strong>.</td>
+      <td class="centered">It should define the<br><strong>appearance</strong>.</td>
+      <td class="centered">It should define responses to<br><strong>user interaction</strong>.</td>
       </tr>
       </table>
     </article>
@@ -169,8 +196,7 @@
     <article class='slide title-slide'>
       <div class="vcenter">
         <h1>Dive into HTML</h1>
-        <p>The content layer</p>
-        <p><img src="assets/TRIAD-html.gif" width="267" height="241" alt="content layer" /></p>
+        <p>The semantic layer</p>
       </div>
     </article>
 
@@ -202,49 +228,30 @@
       <h2>HTML tags</h2>
       <p>The structure of a webpage is defined by HTML <span class="keyword">tags</span>. Angled brackets denote tags, like this:</p>
       <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;</code></p>
-      <p class="centered sidenote">Think about HTML tags like the beams of a house.<br />
-        It's what holds up a webpage.</p>
-      <p class="centered"><img src="assets/house_beam.jpg" width="300" height="232" alt="house beam" /></p>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>HTML tags</h2>
-      <p>Tags typically come in <strong>pairs</strong> -- an opening tag and a closing tag with a forward slash:</p>
+      <p>Tags typically come in <strong>pairs</strong> &mdash; an opening tag and a closing tag with a forward slash:</p>
       <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;&lt;/tag&gt;</code></p>
       <p class="sidenote">Some examples:</p>
 <pre style="width: 45%; float: left;">&lt;!DOCTYPE html&gt;
-<strong>&lt;html&gt;</strong>
+<strong class="highlight h-1">&lt;html&gt;</strong>
   &lt;head&gt;
     &lt;title&gt; &lt;/title&gt;
   &lt;/head&gt;
-  &lt;body&gt;
-  &lt;/body&gt;
-<strong>&lt;/html&gt;</strong></pre>
-<pre style="width: 45%; float: right;">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt; &lt;/title&gt;
-  &lt;/head&gt;
-  <strong>&lt;body&gt;</strong>
-  <strong>&lt;/body&gt;</strong>
-&lt;/html&gt;</pre>
+  <strong class="highlight h-2">&lt;body&gt;</strong>
+  <strong class="highlight h-2">&lt;/body&gt;</strong>
+<strong class="highlight h-1">&lt;/html&gt;</strong></pre>
 <br clear="all" />
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>HTML tags</h2>
-      <p>Tags typically come in <strong>pairs</strong> -- an opening tag and a closing tag with a forward slash:</p>
-      <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;&lt;/tag&gt;</code></p>
-      <p>Practice writing a <code>body</code> tag with me in <a href="https://thimble.webmaker.org/en-US/editor">Thimble</a>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>HTML tags</h2>
       <p>Tags can be "nested" within other tags, like this:</p>
-      <p class="centered" style="font-size: 2.5em;"><code>&lt;tag&gt;<span style="font-size: 1.3em; color: purple;">&lt;tag&gt;&lt;/tag&gt;</span>&lt;/tag&gt;</code></p>
+      <p class="centered" style="font-size: 2.5em;"><code>&lt;tag&gt;<span class="highlight h-1" style="font-size: 1.3em;">&lt;tag&gt;&lt;/tag&gt;</span>&lt;/tag&gt;</code></p>
       <p class="centered sidenote">(This relationship is often referred to using the terms "parent" node and "child" nodes.)</p>
       <br />
       <p class="sidenote" style="margin-bottom: 0px;">For example:</p>
@@ -276,68 +283,14 @@
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
-      <h2>HTML tags</h2>
-      <p>Tags can be "nested" within other tags, like this:</p>
-      <p class="centered" style="font-size: 2.5em;"><code>&lt;tag&gt;<span style="font-size: 1.3em; color: purple;">&lt;tag&gt;&lt;/tag&gt;</span>&lt;/tag&gt;</code></p>
-      <p>Practice writing a <code>head</code> and <code>body</code> tag nested inside of a <code>html</code> tag with me in <a href="https://thimble.webmaker.org/en-US/editor">Thimble</a>
-<br clear="all" />
-       <p class="centered sidenote"><strong>Remember:</strong> The innermost tag must be closed <strong>before</strong>  trying to open up a new tag.<br />
-        This would be incorrect: &lt;html&gt;&lt;head&gt;&lt;body&gt;&lt;/html&gt;&lt;/head&gt;&lt;/body&gt; </p>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>HTML tags</h2>
-      <p>Tags can be "nested" within other tags, like this:</p>
-      <p class="centered" style="font-size: 2.5em;"><code>&lt;tag&gt;<span style="font-size: 1.3em; color: purple;">&lt;tag&gt;&lt;/tag&gt;</span>&lt;/tag&gt;</code></p>
-      <p>Now where does the <code>title</code> tag get nested? Practice in <a href="https://thimble.webmaker.org/en-US/editor">Thimble</a></p>
-      <br clear="all" />
-      <p class="centered sidenote"><strong>Remember:</strong> The innermost tag must be closed <strong>before</strong>  trying to open up a new tag.<br />
-        This would be incorrect: &lt;html&gt;&lt;head&gt;&lt;title&gt;&lt;/html&gt;&lt;/head&gt;&lt;/title&gt; </p>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
       <h2>HTML in a web browser</h2>
-      <p>If you ever forget the basic tags needed to build a basic webpage, the <a href="https://thimble.webmaker.org/en-US/editor">blank Thimble editor</a> is available to use.</p>
-    </article>
-
-
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>HTML in a web browser</h2>
-      <p>But remember: HTML tags are like the beams of a house -- they denote structure, not content.)  </p>
-      <p>So if I view the default <a href="https://thimble.webmaker.org/en-US/editor">Thimble</a> page in a web browser, I don't see anything interesting yet...</p>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>HTML in a web browser</h2>
-      <p>But I can right-click and select <strong>View Page Source</strong> to see what the HTML is to confirm that it's not a blank file.</p>
-      <p class="sidenote">(I suggest that you do this yourself any time you see something you like so you can reverse-engineer it.)</p>
-      <p class="centered"><img src="assets/llcodedotcom_viewsource.gif" width="468" height="362" alt="view source" /></p>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>Sidenote: HTML Document Types</h2>
-      <p>What about the 1st line?</p>
-<pre class='prettyprint'>&lt;!DOCTYPE html&gt;</pre>
-      <p>This is a <span class="keyword">Document Type</span> declaration. <code>DOCTYPE</code> indicates to the web browser what <strong>version</strong> of HTML the file is.</p>
-      <p class="sidenote">(Consider how old versions of Microsoft Office or Photoshop have problems opening files that were created in later versions of the software.)
-      <p class="sidenote">For example, it could be an <a href="http://www.alistapart.com/articles/doctype/">older document type</a> like the ones below, or the newer "HTML5" one that we're using above.
-      </p>
-<pre>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd"&gt;</pre>
-<pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</pre>
-      </p>
+      <p>I can <strong>View Page Source</strong> on any website to see the raw HTML behind the scenes.</p>
+      <p class="centered"><img src="assets/view-source.png" alt="view source" /></p>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>HTML content</h2>
-      <p class="sidenote">(If HTML tags are the beams of a house, you still need to put up walls and put in furniture for it to be liveable.)</p>
       <p>The human-viewable content of a HTML tag goes in between the opening and closing tags like this:</p>
       <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;<span style="color: #333;">Content</span>&lt;/tag&gt;</code></p>
 <pre>&lt;!DOCTYPE html&gt;
@@ -353,17 +306,7 @@
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
-      <h2>HTML content</h2>
-      <p>The human-viewable content of a HTML tag goes in between the opening and closing tags like this:</p>
-      <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;<span style="color: #333;">Content</span>&lt;/tag&gt;</code></p>
-      <p>Practice writing a <code>body</code> tag with some human-viewable content in <a href="https://thimble.webmaker.org/en-US/editor">Thimble</a></p>
-      <br clear="all" />
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
       <h2><code>&lt;head&gt;</code> vs <code>&lt;body&gt;</code></h2>
-      <p>Using a copy of the default <a href="https://thimble.webmaker.org/en-US/editor">Thimble</a> page, I'm going to edit it to answer the below questions and prepare you for the following exercise you'll do on your own time.</p>
       <ul class="spacey_list">
         <li>
           What happens when I change the content in the <code>&lt;title&gt;</code> tag?
@@ -376,26 +319,7 @@
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
-      <h2>Exercise #1 (15 minutes)</h2>
-      <ol class="spacey_list">
-        <li>Open <a href="https://thimble.webmaker.org/p/tk0/edit" target="_blank"><code>https://thimble.webmaker.org/p/tk0/edit</code></a> in Firefox.</li>
-        <li>
-          Read about the <code>h1</code> tag in thimble by clicking on the orange question mark
-          <img class="align-left padded" src="http://dl.dropbox.com/u/29163874/Screenshots/-.png">
-        </li>
-        <li>Try changing the title to "This is my cool page"</li>
-        <li>Try publishing the page</li>
-        <li>View how the display has changed in the right (preview) panel.</li>
-        <li>Explore some of the HTML tags listed on the <strong>next slide</strong> by adding them to your page.</li>
-      </ol>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
       <h2>Exercise #1 - Simple HTML tags</h2>
-      <div class="sidenote">
-        (Don't forget that viewable content goes in-between opening and closing tag pairs. Notice how Thimble will hint at you when/where you might not have closed a tag.)
-      </div>
       <div class="cheatsheet">
         <div>
           <h3>Hierarchy</h3>
@@ -414,9 +338,6 @@
     <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>Exercise #1 - Simple HTML tags</h2>
-      <div class="sidenote">
-        (Don't forget that viewable content goes in-between opening and closing tag pairs. Notice how Thimble will hint at you when/where you might not have closed a tag.)
-      </div>
       <div class="cheatsheet">
         <div>
           <h3>Section Formatting</h3>
@@ -447,9 +368,8 @@
     <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>Void (or empty) HTML Tags</h2>
-      <p><span class="keyword">Void tags</span> don't format content -- instead they are used to render or embed objects in our page.</p>
-      <p>These tags <strong>do not</strong> come in pairs like <code>h1</code> or <code>p</code> tags. You only type the tag once.</p>
-      <p>In some versions of HTML <span class="sidenote">(specifically XHTML... remember <code>DOCTYPE</code>?)</span> they "self-close" with a back slash (<code>/</code>) immediately before the left angled bracket (<code>&gt;</code>). The most often used example of this is the <code>&lt;br&gt;</code> tag used to create a <strong>line break</strong>.</p>
+      <p><span class="keyword">Void tags</span> don't format content &mdash; instead they are used to render or embed objects in our page.</p>
+      <p>These tags <strong>do not</strong> come in pairs like <code>h1</code> or <code>p</code> tags.</p>
 
       <div class="fake-thimble cf">
         <div class="left">
@@ -472,11 +392,11 @@ This text &lt;br&gt;goes over&lt;br&gt;several lines.
       <div class="cheatsheet">
         <div>
           <h3>Void tags</h3>
-          <code>&lt;hr&gt;</code>&ndash; horizontal rule<br />
-          <code>&lt;br&gt;</code> or <code>&lt;br&gt;</code> - line break<br />
-          <code>&lt;input&gt;</code> or <code>&lt;input&gt;</code> - text input boxes<br />
+          <code>&lt;hr&gt;</code> &mdash; horizontal rule<br />
+          <code>&lt;br&gt;</code> &mdash; line break<br />
+          <code>&lt;input&gt;</code> &mdash; text input boxes<br />
           <hr />
-          <code>&lt;img&gt;</code> or <code>&lt;img&gt;</code> - an image <em>*We'll get to this one very soon.</em><br />
+          <code>&lt;img&gt;</code> &mdash; an image <br />
         </div>
       </div>
       <div class="fake-thimble cf">
@@ -510,7 +430,7 @@ Hello&lt;br&gt;world
       </ul>
       <p>Consider the <code>img</code> tag. Not very exciting right?</p>
 <pre>&lt;p&gt;Kicking up HTML a notch.&lt;/p&gt;
-&lt;img&gt;
+<strong>&lt;img&gt;</strong>
 &lt;p&gt;Do you agree?&lt;/p&gt;</pre>
     </article>
 
@@ -518,23 +438,19 @@ Hello&lt;br&gt;world
     <article class='slide'>
       <h2>Attributes</h2>
       <p>Sometimes we need to define data that we don't see right away but it's used by the browser to help render special content like hyperlinks, images, or video.</p>
-      <p class="sidenote">Here's that same <code>img</code> tag but now it's using a tag <span class="keyword">attribute</span> to tell my webpage where to find a source image:</p>
+      <p class="sidenote">Here's that same <code>img</code> tag but now it's using an <span class="keyword">attribute</span> to tell my webpage where to find a source image:</p>
 <pre>&lt;p&gt;Kicking up HTML a notch.&lt;/p&gt;
-&lt;img src="http://goo.gl/7eSU5"&gt;
+&lt;img <strong>src="http://gathergather.co.nz/grumpy-cat.png"</strong>&gt;
 &lt;p&gt;Do you agree?&lt;/p&gt;</pre>
-      <br clear="all" />
-      <p>Remember, it's <strong>not</strong> <code>&lt;img&gt;http://goo.gl/7eSU5&lt;/img&gt;</code></p>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>Working with images</h2>
-      <p>Let's look at that again: images are an example of a <span class="keyword">void tag</span> <strong>with</strong> an <span class="keyword">attribute</span>.</p>
-      <pre class="prettyprint">&lt;img src="http://goo.gl/7eSU5"&gt;</pre>
+      <pre class="prettyprint">&lt;img <span class="highlight h-1">src</span>="<span class="highlight h-2">http://gathergather.co.nz/grumpy-cat.png</span>"&gt;</pre>
       <ul>
-        <li><code>src</code> is the <em>attribute</em></li>
-        <li><code>http://goo.gl/7eSU5</code> is the <em>value</em> of that attribute<br />
-          <span class="sidenote">Values are typically surrounded by <em>single or double quotes</em> since occassionally values may contain spaces.</span></li>
+        <li><code>src</code> is the <em class="highlight h-1">attribute</em></li>
+        <li><code>http://goo.gl/7eSU5</code> is the <em class="highlight highlight-2">value</em> of that attribute</li>
       </ul>
       <p>With an <code>img</code> tag, the value of the <code>src</code> attribute tells the browser what the <em>url source</em> of our image is.</p>
     </article>
@@ -544,26 +460,22 @@ Hello&lt;br&gt;world
       <h2>Working with images</h2>
       <p>Tags can have more than one attribute, some <strong>required</strong> (like <code>src</code>) and others are <strong>optional</strong>:</p>
       <ul style="margin-top: -1em;">
-        <li><code>width</code> and <code>height</code> tell the browser what dimension to <em>display</em> the image at.<br />
-          <span class="sidenote">(This is useful so the page doesn't jump around when loading very large images, or while on a very slow internet connection such as dial-up or 2G/3G. Also useful to know that width/height values don't necessarily have to match the image's <em>actual</em> width/height.)</span></li>
+        <li><code>width</code> and <code>height</code> tell the browser what dimension to <em>display</em> the image at.</li>
       </ul>
-      <hr />
+    </article>
+
+    <article class='slide'>
+      <h2>Working with images</h2>
       <p class="sidenote">For example, without <code>width</code> and <code>height</code> attributes, the browser displays image at original size.</p>
-      <pre class="prettyprint">&lt;img src="http://goo.gl/7eSU5"&gt;</pre>
+      <pre class="prettyprint">&lt;img src="http://gathergather.co.nz/grumpy-cat.png"&gt;</pre>
       <img src="http://goo.gl/7eSU5" />
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>Working with images</h2>
-      <p>Tags can have more than one attribute, some <strong>required</strong> (like <code>src</code>) and others are <strong>optional</strong>:</p>
-      <ul style="margin-top: -1em;">
-        <li><code>width</code> and <code>height</code> tell the browser what dimension to <em>display</em> the image at.<br />
-          <span class="sidenote">(This is useful so the page doesn't jump around when loading very large images, or while on a very slow internet connection such as dial-up or 2G/3G. Also useful to know that width/height values don't necessarily have to match the image's <em>actual</em> width/height.)</span></li>
-      </ul>
-      <hr />
       <p class="sidenote">Now with a manipulated width and height (about 50% smaller):</p>
-      <pre class="prettyprint">&lt;img src="http://goo.gl/7eSU5" width="320" height="262"&gt;</pre>
+      <pre class="prettyprint">&lt;img src="http://gathergather.co.nz/grumpy-cat.png" width="320" height="262"&gt;</pre>
       <img src="http://goo.gl/7eSU5" width="320" height="262" />
     </article>
 
@@ -572,14 +484,13 @@ Hello&lt;br&gt;world
       <h2>Working with images</h2>
         <p>Another optional image attribute:</p>
         <ul style="margin-top: -1em;">
-          <li><code>alt</code> is <em>alternative text</em> to display to visually impaired web visitors using screen readers. It also shows up when there's a "broken image" due to typos or moved files.<br />
-            <span class="sidenote">(Technically, it's required to be "<a href="http://validator.w3.org/"target="_blank">valid</a>" HTML markup which is why you might see <code>alt=""</code> often used.)</span></li>
+          <li><code>alt</code> is <em>alternative text</em> to display to visually impaired web visitors using screen readers. It also shows up when there's a "broken image" due to typos or moved files.</li>
         </ul>
 <pre>&lt;img
-  src="http://goo.gl/7eSU5"
+  src="http://gathergather.co.nz/grumpy-cat.png"
   width="160"
   height="131"
-  alt="HTML LOLcat"&gt;</pre>
+  alt="Grumpy Cat"&gt;</pre>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -600,8 +511,8 @@ Hello&lt;br&gt;world
       <p>The <code>&lt;a&gt;</code> <em>anchor</em> tag is used to tell the browser that we want to link to somewhere else on our site or on the web.</p>
       <p>The <code>a</code> tag comes in pairs and the content between the opening and closing tags is what is displayed as the link text (typically underlined).</p>
       <br />
-      <pre class="prettyprint">Visit &lt;a&gt;Ladies Learning Code&lt;/a&gt;.</pre>
-      <p>Visit <a>Ladies Learning Code</a>.</p>
+      <pre class="prettyprint">Visit &lt;a&gt;Gather Workshops&lt;/a&gt;.</pre>
+      <p>Visit <a>Gather Workshops</a>.</p>
       <br />
       <p class="sidenote">But wait! This link doesn't take me anywhere!</p>
     </article>
@@ -609,14 +520,14 @@ Hello&lt;br&gt;world
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>Hyperlinks</h2>
-      <p>We need a way of setting the URL <span class="sidenote">(e.g. <code>http://webmaker.org</code>)</span> that the browser will request when someone clicks on the link.</p>
+      <p>We need a way of setting the URL <span class="sidenote">(e.g. <code>http://gathergather.co.nz/workshops/</code>)</span> that the browser will request when someone clicks on the link.</p>
       <p>Once again, we need to use <span class="keyword">attributes</span>.</p>
-      <pre class="prettyprint">Visit &lt;a <strong>href="http://webmaker.org"</strong>&gt;webmaker.org&lt;/a&gt;.</pre>
-      <p>Visit <a href="http://webmaker.org" target="_blank">webmaker.org</a>.</p>
+      <pre class="prettyprint">Visit &lt;a <strong>href="http://gathergather.co.nz/workshops/"</strong>&gt;Gather Workshops&lt;/a&gt;.</pre>
+      <p>Visit <a href="http://gathergather.co.nz/workshops/" target="_blank">Gather Workshops</a>.</p>
       <ul>
         <li><code>href</code> is the <em>attribute</em></li>
-        <li><code>http://webmaker.org</code> is the <em>value</em> of that attribute</li>
-        <li>And remember that the <strong>clickable text goes in between</strong> the opening and closing <code>a</code> tags.</li>
+        <li><code>http://gathergather.co.nz/workshops/</code> is the <em>value</em> of that attribute</li>
+        <li>And remember that the <strong>human-viewable text goes in between</strong> the opening and closing <code>a</code> tags.</li>
       </ul>
     </article>
 
@@ -720,6 +631,14 @@ Hello&lt;br&gt;world
 &lt;/head&gt;
 </pre>
 
+    </article>
+
+        <!-- SLIDE: CSS -->
+    <article class='slide'>
+      <h2>Inspecting the DOM</h2>
+      <p>Or, I can <strong>Inspect Element</strong> to see <strong>DOM</strong> (Document Object Model). This is what the browser does with HTML.</p>
+      <p class="sidenote">(I suggest that you do this yourself any time you see something you like so you can reverse-engineer it.)</p>
+      <p class="centered"><img src="assets/inspect-element.png" alt="view source" /></p>
     </article>
 
 
@@ -1134,7 +1053,7 @@ aside {
           e.g. <code>id="centered_on_page"</code><br />
         </li>
       </ul>
-      <p class="sidenote"><strong>Important!</strong> You should only have <strong>one</strong> instance of an ID per page. Any more can cause unexpected things to happen with your CSS -- and later, JavaScript.</p>
+      <p class="sidenote"><strong>Important!</strong> You should only have <strong>one</strong> instance of an ID per page. Any more can cause unexpected things to happen with your CSS &mdash; and later, JavaScript.</p>
     </article>
 
         <!-- SLIDE: CSS -->
