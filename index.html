@@ -125,7 +125,7 @@
     </article>
 
     <article class='slide'>
-      <h2>A request bounces</h2>
+      <h2>DNS: A request bounces</h2>
       <img src="assets/trace_route.png">
     </article>
 
@@ -154,6 +154,18 @@
     </article>
 
     <article class='slide'>
+      <h2>An ISP can charge extra to allow access to your favourite website, e.g. Facebook</h2>
+    </article>
+
+    <article class='slide'>
+      <h2>A government can censor access to information, e.g. North Korea</h2>
+    </article>
+
+    <article class='slide'>
+      <h2>Telecom, who owns the Souther Cross Cable, could slow down other ISPs' international requests</h2>
+    </article>
+
+    <article class='slide'>
       <h2>The solution</h2>
       <p>Organisations, like <a href="http://internetnz.net.nz">InternetNZ</a>, promote the open web. This means that ISPs must treat all requests equally. They can't favour one network over another.</p>
     </article>
@@ -168,35 +180,36 @@
     <article class='slide'>
       <h2>A basic webpage</h2>
       <p>
-        A webpage is mainly built using 3 web languages:
+        A webpage is mainly built using 3 web languages.
       </p>
-      <table width="100%">
-      <tr>
-      <td width="33%" class="centered"><strong>HTML</strong> <small>(Hypertext Markup Language)</small> <br>
-          is the markup language.</td>
-      <td width="33%" class="centered"><strong>CSS</strong> <small>(Cascading Style Sheets)</small> <br>
-          is the style sheet language.</td>
-      <td width="33%" class="centered"><strong>JavaScript</strong><br>
-          is the programming language.</td>
-      </tr>
-            <tr>
-      <td class="centered"><img src="assets/TRIAD-html.gif" width="267" height="241" alt="content layer" /></td>
-      <td class="centered"><img src="assets/TRIAD-css.gif" width="261" height="241" alt="Presentation Layer" /></td>
-      <td class="centered"><img src="assets/TRIAD-js.gif" width="274" height="241" alt="Behaviour Layer" /></td>
-      </tr>
-            <tr>
-      <td class="centered">It should define the<br><strong>semantic structure</strong>.</td>
-      <td class="centered">It should define the<br><strong>appearance</strong>.</td>
-      <td class="centered">It should define responses to<br><strong>user interaction</strong>.</td>
-      </tr>
-      </table>
+    </article>
+
+    <article class="slide">
+      <h2><strong>HTML</strong> <small>(Hypertext Markup Language)</small> <br>
+          is the markup language.</h2>
+          <p><img src="assets/html.png"  /></p>
+          <p>It should define the <strong>semantic structure</strong>.</p>
+    </article>
+
+      <article class="slide">
+      <h2><strong>CSS</strong> <small>(Cascading Style Sheets)</small> <br>
+          is the style sheet language.</h2>
+          <p><img src="assets/html_css.png" /></p>
+          <p>It should define the <strong>appearance</strong>.</p>
+    </article>
+
+    <article class="slide">
+      <h2><strong>JavaScript</strong><br>
+          is the programming language.</h2>
+          <p><img src="assets/html_css_js.png" /></p>
+          <p>It should define responses to <strong>user interaction</strong>.</p>
     </article>
 
     <!-- new slide -->
     <article class='slide title-slide'>
       <div class="vcenter">
         <h1>Dive into HTML</h1>
-        <p>The semantic layer</p>
+        <p>The structural layer</p>
       </div>
     </article>
 
@@ -228,6 +241,16 @@
       <h2>HTML tags</h2>
       <p>The structure of a webpage is defined by HTML <span class="keyword">tags</span>. Angled brackets denote tags, like this:</p>
       <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;</code></p>
+    </article>
+
+      <article class='slide'>
+      <h2><code>&lt;<span class="highlight h-1">a</span> <span class="highlight h-2">href</span>="<span class="highlight h-3">#</span>"&gt;<span class="highlight h-4">Gather</span>&lt;/a&gt;</code></h2>
+      <ul>
+          <li><span class="highlight h-1">Tag Name</span></li>
+          <li><span class="highlight h-2">Attribute Name</span> </li>
+          <li><span class="highlight h-3">Attribute Value</span></li>
+          <li><span class="highlight h-4">Text Node</span></li>
+      </ul>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -306,6 +329,56 @@
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
+      <h2>Exercise #1 &mdash; Reading the structure of a webpage</h2>
+      <div class="cheatsheet">
+        <div>
+          <h3>Section Formatting</h3>
+          <code>&lt;blockquote&gt;</code> &mdash; a quoted section<br />
+          <code>&lt;article&gt;</code> &mdash; a self contained piece of content<br />
+          <code>&lt;nav&gt;</code> &mdash; the navigation of a section<br />
+          <code>&lt;header&gt;</code> &mdash; the header of a section<br />
+          <code>&lt;footer&gt;</code> &mdash; the footer of a section<br />
+        </div>
+      </div>
+    </article>
+
+    <!-- SLIDE: HTML -->
+    <article class='slide'>
+      <h2>Exercise #1 &mdash; Reading the structure of a webpage</h2>
+      <div class="cheatsheet">
+        <div>
+          <h3>Hierarchy</h3>
+          <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc to <code>&lt;h6&gt;</code> &mdash; heading levels 1 to 6<br />
+          <code>&lt;p&gt;</code> &mdash; paragraph<br />
+        </div>
+        <div>
+          <h3>Text Formatting</h3>
+          <code>&lt;em&gt;</code> &mdash; Emphasis (often italic)<br />
+          <code>&lt;strong&gt;</code> &mdash; Strong Emphasis (often bold)<br />
+        </div>
+        <div>
+          <h3>Special Types</h3>
+          <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> &mdash; Lists<br />
+          <code>&lt;a&gt;</code> &mdash; Links<br />
+          <code>&lt;img&gt;</code> &mdash; Embedded Image<br />
+        </div>
+      </div>
+    </article>
+
+    <!-- SLIDE: HTML -->
+    <article class='slide'>
+      <img src="assets/nzherald.png">
+    </article>
+
+
+
+   <!-- new slide -->
+    <article class='slide title-slide'>
+      <h1>Going deeper</h1>
+    </article>
+
+    <!-- SLIDE: HTML -->
+    <article class='slide'>
       <h2><code>&lt;head&gt;</code> vs <code>&lt;body&gt;</code></h2>
       <ul class="spacey_list">
         <li>
@@ -317,53 +390,6 @@
       </ul>
     </article>
 
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>Exercise #1 - Simple HTML tags</h2>
-      <div class="cheatsheet">
-        <div>
-          <h3>Hierarchy</h3>
-          <code>&lt;hl&gt;</code>, <code>&lt;h2&gt;</code>, etc to <code>&lt;h6&gt;</code> - heading levels 1 to 6<br />
-          <code>&lt;p&gt;</code> - paragraph<br />
-        </div>
-        <div>
-          <h3>Text Formatting</h3>
-          <code>&lt;b&gt;</code> or <code>&lt;strong&gt;</code> - bold<br />
-          <code>&lt;i&gt;</code> or <code>&lt;em&gt;</code> - italics or emphasis<br />
-          <code>&lt;center&gt;</code> - centered<br />
-        </div>
-      </div>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>Exercise #1 - Simple HTML tags</h2>
-      <div class="cheatsheet">
-        <div>
-          <h3>Section Formatting</h3>
-          <code>&lt;blockquote&gt;</code> - indented block of code<br />
-        </div>
-        <div>
-          <h3>Input &amp; Forms</h3>
-          <code>&lt;button&gt;</code> - clickable button<br />
-          <code>&lt;textarea&gt;</code> - multiline text area for user input<br />
-        </div>
-      </div>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>Exercise #1 - Exploration Questions</h2>
-      <ul class="spacey">
-        <li>What are acceptable tags that lend well to being nested and what should never be nested?</li>
-        <li>How is whitespace treated? What happens when you use multiple spaces or line breaks?</li>
-      </ul>
-    </article>
-
-   <!-- new slide -->
-    <article class='slide title-slide'>
-      <h1>Going deeper</h1>
-    </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
@@ -405,14 +431,14 @@ This text &lt;br&gt;goes over&lt;br&gt;several lines.
 &lt;hr&gt;
 Hello&lt;br&gt;world
 &lt;input type="text"&gt;
-&lt;img src="http://dl.dropbox.com/u/29163874/Screenshots/_.png"&gt;
+&lt;img src="http://gathergather.co.nz/grumpy_cat.png"&gt;
           </pre>
         </div>
         <div class="right">
           <div class="preview">
             <hr>
             Hello<br>world
-            <img class="align-left" src="http://dl.dropbox.com/u/29163874/Screenshots/_.png">
+            <img class="align-left" src="http://gathergather.co.nz/grumpy_cat.png">
           </div>
         </div>
       </div>
@@ -450,7 +476,7 @@ Hello&lt;br&gt;world
       <pre class="prettyprint">&lt;img <span class="highlight h-1">src</span>="<span class="highlight h-2">http://gathergather.co.nz/grumpy-cat.png</span>"&gt;</pre>
       <ul>
         <li><code>src</code> is the <em class="highlight h-1">attribute</em></li>
-        <li><code>http://goo.gl/7eSU5</code> is the <em class="highlight highlight-2">value</em> of that attribute</li>
+        <li><code>http://gathergather.co.nz/grumpy_cat.png</code> is the <em class="highlight highlight-2">value</em> of that attribute</li>
       </ul>
       <p>With an <code>img</code> tag, the value of the <code>src</code> attribute tells the browser what the <em>url source</em> of our image is.</p>
     </article>
@@ -468,7 +494,7 @@ Hello&lt;br&gt;world
       <h2>Working with images</h2>
       <p class="sidenote">For example, without <code>width</code> and <code>height</code> attributes, the browser displays image at original size.</p>
       <pre class="prettyprint">&lt;img src="http://gathergather.co.nz/grumpy-cat.png"&gt;</pre>
-      <img src="http://goo.gl/7eSU5" />
+      <img src="http://gathergather.co.nz/grumpy_cat.png" />
     </article>
 
     <!-- SLIDE: HTML -->
@@ -476,7 +502,7 @@ Hello&lt;br&gt;world
       <h2>Working with images</h2>
       <p class="sidenote">Now with a manipulated width and height (about 50% smaller):</p>
       <pre class="prettyprint">&lt;img src="http://gathergather.co.nz/grumpy-cat.png" width="320" height="262"&gt;</pre>
-      <img src="http://goo.gl/7eSU5" width="320" height="262" />
+      <img src="http://gathergather.co.nz/grumpy_cat.png" width="320" height="262" />
     </article>
 
         <!-- SLIDE: HTML -->
@@ -533,25 +559,14 @@ Hello&lt;br&gt;world
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Exercise #2 (10-15 minutes)</h2>
+      <h2>Exercise #2 &mdash; Writing HTML</h2>
       <ol class="spacey_list">
-        <li>Visit <a href="https://thimble.webmaker.org/p/eyr/edit">https://thimble.webmaker.org/p/eyr/edit</a> in your browser</li>
-        <li>Create a text link using the <code>&lt;a&gt;</code> tag that points to "http://webmaker.org".</li>
-        <li>Using your knowledge of the <code>&lt;a&gt;</code> tag, try to create a <em>clickable image</em> by creating two or three more <code>&lt;img&gt;</code> tags and putting them <em>inside</em> <code>&lt;a&gt;</code> tags. Clicking on the image should open up "http://webmaker.org".<br />
-        <span class="sidenote">(Hint: This involves nested HTML tags.)</span>
+        <li>Indentify the semantics in the wireframe</li>
+        <li>Sketch out the HTML</li>
+        <li>Fill in with dummy content</span>
         </li>
       </ol>
-      <h4>Make sure to publish your work, and ask the volunteers for help if you need it!</h4>
-    </article>
-
-        <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
-      <h2>Adding webpages to your webpage</h2>
-      <p>As time goes on, it has become easier and easier to include <strong>parts of other websites</strong> on to your own website. We call this "embedding".</p>
-      <p>From YouTube, you can find an <strong>Embed Code</strong> to put into your website <span class="sidenote">(click on "Share" button below video, then "Embed")</span> and YouTube's servers do all the rest of the work via the <code>iframe</code> tag.</p>
-      <pre class="prettyprint">&lt;iframe width="560" height="315" src="http://www.youtube.com/embed/tlnFyjpV5Wo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</pre>
-      <iframe width="560" height="315" src="http://www.youtube.com/embed/tlnFyjpV5Wo" frameborder="0" allowfullscreen></iframe>
-      <p>Adding a Google Map is similiar. <a href="assets/google_map_embed.jpg" target="_blank">Click here for instructional screenshot.</a></p>
+      <h4>Ask the volunteers for help if you need it!</h4>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -597,32 +612,13 @@ Hello&lt;br&gt;world
     <article class='slide slide-list'>
       <h2>CSS selectors and properties</h2>
       <p>Here's a CSS declaration dissected:</p>
-      <p class="centered"><img src="assets/css.png" /></p>
-      <ul>
-        <li>A <strong>basic</strong> <span class="keyword">selector</span> will match its HTML tag name. In this case, all content that is a <code>&lt;h1&gt;</code> will be applied this style.<br /><span class="sidenote">(We'll get into more complex ones later.)</span></li>
-        <li>A <span class="keyword">property</span> is a special label for some visual aspect of the selector such as color or size. You can see a list of them in this <a href="http://www.cheatography.com/davechild/cheat-sheets/css2/">cheatsheet</a>.</li>
-        <li>The property <strong>value</strong> is specific to the property type. For example, <code>color</code> properties accept colour values like <code>blue</code> or <code>#FFFF00</code>. <code>font-size</code> properties accept units of measurements like <code>12px</code> (where "px" stands for pixels).</li>
-      </ul>
-    </article>
-
- <!-- SLIDE: CSS -->
-    <article class='slide slide-list'>
-      <h2>CSS selectors and properties</h2>
-      <p>Here's a CSS declaration dissected:</p>
-      <p class="centered"><img src="assets/css.png" /></p>
-      <ul>
-        <li>Use <strong>curly braces</strong> (<code>{}</code>) to hold a list of the property:value sets.</li>
-        <li>You can define multiple property:value sets but you must end each one with a <strong>semi-colon</strong> (<code>;</code>).</li>
-      </ul>
+      <p class="centered"><img src="assets/css_parts.png" /></p>
     </article>
 
        <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Where to put your CSS</h2>
       <p>CSS can live in two places &ndash; an external stylesheet, or at the top of your HTML page</p>
-      <p>Since we're using Thimble, we'll be placing all of our CSS in the <code>&lt;style&gt;</code> tag (placed between the <code>&lt;head&gt;</code> tags)</p>
-      <p>See an example here: <a href="https://thimble.webmaker.org/p/eyb/edit">https://thimble.webmaker.org/p/eyb/edit</a></p>
-
 <pre>
 &lt;head&gt;
   &lt;style&gt;
@@ -631,12 +627,20 @@ Hello&lt;br&gt;world
 &lt;/head&gt;
 </pre>
 
+<pre>
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="<span class="omg">stylesheet.css</span>"&gt;
+&lt;/head&gt;
+</pre>
+
+      <p>Inside <span class="omg">stylesheet.css</span>, there is <strong>no</strong> <code>&lt;style&gt;</code> tag.</p>
+
     </article>
 
         <!-- SLIDE: CSS -->
     <article class='slide'>
       <h2>Inspecting the DOM</h2>
-      <p>Or, I can <strong>Inspect Element</strong> to see <strong>DOM</strong> (Document Object Model). This is what the browser does with HTML.</p>
+      <p>You can use <strong>Inspect Element</strong> to see <strong>DOM</strong> (Document Object Model). This is what the browser does with HTML.</p>
       <p class="sidenote">(I suggest that you do this yourself any time you see something you like so you can reverse-engineer it.)</p>
       <p class="centered"><img src="assets/inspect-element.png" alt="view source" /></p>
     </article>
@@ -663,8 +667,6 @@ Hello&lt;br&gt;world
     <article class='slide slide-list'>
       <h2>Our first style: background-color</h2>
       <p><code>background-color</code> is a property that can be applied to any tag, such as the <code>body</code>.</p>
-      <p>There are many different kinds of colour values. One way is to use English colour names (American spelling), such as red, blue, green, pink...</p>
-      <p>There are some weird ones too &ndash; like Coral, AliceBlue, and Cornsilk.</p>
 
 <pre>
 &lt;head&gt;
@@ -727,7 +729,7 @@ h2 { font-family: Courier; }</pre>
     <article class='slide slide-list'>
       <h2>Changing the font family</h2>
       <p>Not all fonts are installed on all computers so it's recommended that you use a list of fonts. If the first font in the list isn't available, it will try to use the next.</p>
-<pre>body { background-color: gray; color: white; <strong>font-family: Helvetica, Verdana, Arial, sans-serif;</strong> }</pre>
+<pre>body { <strong>font-family: Helvetica, Verdana, Arial, sans-serif;</strong> }</pre>
       <p class="sidenote">(Notice how the font-family for the headers are still Courier? That's the "cascading" part of Cascading Style Sheets in action. Inline styles take precedence, then innermost tags, then outer tags.)</p>
     </article>
 
@@ -736,15 +738,14 @@ h2 { font-family: Courier; }</pre>
       <h2>Changing the font size</h2>
       <p>Font sizes are typically defined in pixels (px) or "ems" (em).</p>
       <ul>
-        <li style="font-size: 10px;">20px</li>
-        <li style="font-size: 20px;">45px</li>
+        <li style="font-size: 20px;">20px</li>
+        <li style="font-size: 45px;">45px</li>
         <li style="font-size: 1em;">0.5em</li>
         <li style="font-size: 1.5em;">1em</li>
       </ul>
       <p>Headers have default font-sizes defined by the browser. Let's override them. </p>
-<pre>h1 { font-family: Courier; <strong>font-size: 25px;</strong> }
-h2 { font-family: Courier; <strong>font-size: 22px;</strong> }</pre>
-<p class="sidenote">(When you've got more time, read <a href="http://kyleschaeffer.com/best-practices/css-font-size-em-vs-px-vs-pt-vs/" target="_blank">this article</a> for more info on font unit sizes.</p>
+<pre>h1 { <strong>font-size: 25px;</strong> }
+h2 { <strong>font-size: 22px;</strong> }</pre>
     </article>
 
     <!-- SLIDE: CSS -->
@@ -756,8 +757,8 @@ h2 { font-family: Courier; <strong>font-size: 22px;</strong> }</pre>
         <li style="font-weight: bold;">bold</li>
       </ul>
       <p>By default, headers are already bolded. Let's remove the bold by applying the <em>normal</em> font weight on them.</p>
-<pre>h1 { font-family: Courier; font-size: 25px; <strong>font-weight: normal;</strong> }
-h2 { font-family: Courier; font-size: 22px; <strong>font-weight: normal;</strong> }</pre>
+<pre>h1 { <strong>font-weight: normal;</strong> }
+h2 { <strong>font-weight: normal;</strong> }</pre>
     </article>
 
     <article class='slide slide-list'>
@@ -811,7 +812,7 @@ a {
 }</span>
 &lt;/style&gt;
 
-&lt;a href="http://wwebmaker.org"&gt;Webmaker&lt;/a&gt;
+&lt;a href="http://gathergather.co.nz"&gt;Gather&lt;/a&gt;
 </pre>
 
     </article>
@@ -895,7 +896,7 @@ a:hover {
 &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
 
 &lt;p&gt;Follow me on
-  &lt;a href="http://twitter.com/pearlchen" target="_blank"&gt;Twitter&lt;/a&gt;!
+  &lt;a href="http://twitter.com/nzgather" target="_blank"&gt;Twitter&lt;/a&gt;!
 &lt;/p&gt;
 </pre>
     </article>
@@ -914,11 +915,14 @@ a:hover {
 
 
     <!-- SLIDE: CSS -->
-    <article class='slide slide-list'>
+    <article class='slide'>
       <h2>Laying out webpages with CSS</h2>
       <p>Layout is one of the most challenging things to do in CSS because it requires you to think about the whole picture and plan ahead.</p>
       <p>To creating a standard 2-column layout requires us to give dimensions to some of our content, and position it accordingly.</p>
-      <p class="centered"><img src="assets/2-column-webpage.png" width="703" height="411" alt="" /></p>
+    </article>
+
+    <article class='slide'>
+      <p class="centered"><img src="assets/wireframe.png" alt="" /></p>
     </article>
 
     <article class='slide slide-list'>
@@ -933,8 +937,6 @@ a:hover {
 <pre>&lt;div&gt;I'm a div!&lt;/div&gt;
 &lt;div&gt;I'm another div!&lt;/div&gt;
 </pre>
-      <div>I'm a div!</div>
-      <div>I'm another div!</div>
     </article>
 
     <article class='slide slide-list'>
@@ -993,7 +995,6 @@ a:hover {
         <li>To indicate the structure of the page</li>
       </ol>
       <p>This helps <span class="keyword">web crawlers</span> from search engines like Google or Bing better understand your content.</p>
-      <p>Even better, it helps <strong>you</strong> from missing a closing <code>&lt;/div&gt;</code> tag and makes your HTML easier to read for everyone.</p>
     </article>
 
     <!-- SLIDE: CSS -->
@@ -1048,9 +1049,9 @@ aside {
       <p>CSS classes are great when you want to re-apply the same style to multiple HTML elements but sometimes you need to only target an HTML container <strong>once</strong>. This is where an <span class="keyword">ID</span> is useful.</p>
       <ul>
         <li>Use a <strong>hash</strong> (<code>#</code>) to define CSS selectors that are IDs.<br />
-          e.g. <code>#centered_on_page</code></li>
+          e.g. <code>#container</code></li>
         <li>Use the <code>id</code> attribute to apply the styles to that element.<br />
-          e.g. <code>id="centered_on_page"</code><br />
+          e.g. <code>id="container"</code><br />
         </li>
       </ul>
       <p class="sidenote"><strong>Important!</strong> You should only have <strong>one</strong> instance of an ID per page. Any more can cause unexpected things to happen with your CSS &mdash; and later, JavaScript.</p>
@@ -1059,16 +1060,16 @@ aside {
         <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>CSS ids</h2>
-      <p>Let's add <code>#centered_on_page</code> and apply the id to the <code>div</code> container immediately after the opening <code>&lt;body&gt;</code> tag in <code>index.html</code>.</p>
+      <p>Let's add <code>#container</code> and apply the id to the <code>div</code> container immediately after the opening <code>&lt;body&gt;</code> tag in <code>index.html</code>.</p>
 <pre>
-#centered_on_page {
+#container {
   margin: 0 auto 0 auto;
   width: 960px;
 }
 </pre>
 <pre>
 &lt;body&gt;
-  &lt;div id="centered_on_page"&gt;
+  &lt;div id="container"&gt;
 
   &lt;/div&gt;
 &lt;/body&gt;
@@ -1082,65 +1083,21 @@ aside {
 <pre>h1 {
   color: <strong>#026873;</strong> /* a unique shade of blue */
 }</pre>
-      <p class="centered"><img src="assets/lg_hex_codes.png" widht="500" height="283" alt="" /></p>
-      <p class="sidenote">Image source: <a href="http://websiteincite.com/create-your-website/hexadecimal-color-codes" target="_blank">http://websiteincite.com/create-your-website/hexadecimal-color-codes</a></p>
-      <p class="sidenote">Chart of many hex colours: <a href="http://www.visibone.com/color/chart_847.gif" target="_blank">http://www.visibone.com/color/chart_847.gif</a></p>
-    </article>
 
-
-     <!-- SLIDE: CSS -->
-    <article class='slide slide-list'>
-      <h2>Including external CSS</h2>
-      <p>Instead of duplicating your <code>&lt;style&gt;</code> content for every webpage, make one single CSS document ending with a <code>.css</code> extension and link to it in the <code>&lt;head&gt;</code> tag instead of (or in addition to) a <code>&lt;style&gt;</code> tag.</p>
-<pre>
-&lt;head&gt;
-  <strong>&lt;link rel="stylesheet" href="styles.css" type="text/css"&gt;</strong>
-  &lt;style&gt;
-  body {
-    font-size: 14px;
-  }
-  &lt;/style&gt;
-&lt;/head&gt;
-</pre>
-
-      <p>Inside styles.css, there is <strong>no</strong> <code>&lt;style&gt;</code> tag:</p>
-<pre>
-body {
-  background-color: black;
-  color: white;
-  font-family: Helvetica, Arial, sans-serif;
-}
-h1 {
-  font-family: Georgia, "Times New Roman", serif;
-}
-</pre>
-
+    <p>Visit <a href="http://www.colorpicker.com/">ColorPicker.com</a> if you don't have Photoshop.</p>
     </article>
 
     <!-- SLIDE: CSS -->
      <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Final Exercise</h2>
-      <p>Use this time to create a <strong>School webpage!</strong></p>
+      <p>Use this time to create your own webpage.</p>
       <ul>
-        <li>Visit <a target="_blank" href="https://thimble.webmaker.org/p/ey8/edit">https://thimble.webmaker.org/p/ey8/edit</a></li>
-        <li>First, let's add an external stylesheet that we can build on top of. The stylesheet to link to in this exercise is https://dl.dropbox.com/u/29163874/thimble/school-base.css (hint: put it above the <code>style</code> tag!)</li>
-        <li>Hint: if you're stuck, take a look at <a href="https://thimble.webmaker.org/p/eqf">https://thimble.webmaker.org/p/eqf</a></li>
-        <li>Try adding a google map by replacing the iframe with the embed code you've copied from <a href="http://maps.google.com">Google maps</a></li>
-        <li>Try changing the school colours to match your own!</li>
-        <li>Search on google for some fun facts about your school... or make some up.</li>
-        <li>Don't forget the images and links at the bottom! Try adding a special :hover style to your page</a>
-        <li>If you've got extra time, try out some new CSS properties from the <a href="http://www.cheatography.com/davechild/cheat-sheets/css2/">cheatsheet</a> and other resources listed on the <a href="#slide-94">CSS resources slide</a>.</li>
+        <li>Draw a wireframe</li>
+        <li>Sketch out the HTML</li>
+        <li>Style it up with CSS</li>
       </ul>
       <h3>Got questions? Ask the volunteers to help you out!</h3>
-    </article>
-
-    <!-- SLIDE: CSS -->
-    <article class='slide'>
-      <h2>Bonus: Stuck in the 90s</h2>
-      <p>Visit <a href="https://thimble.webmaker.org/en-US/projects/stuck/edit">https://thimble.webmaker.org/en-US/projects/stuck/edit</a> to apply some of your design skills to this awful, ugly page. Read through the comments and ask for help if you get stuck!</p>
-      <img src="http://dl.dropbox.com/u/29163874/Screenshots/0l.png">
-
     </article>
 
     <!-- SLIDE: CSS -->
@@ -1155,7 +1112,7 @@ h1 {
 
     <article class='slide'>
       <h2>Thank you!</h2>
-      <p>This presentation was forked from <a href="https://github.com/jbuck/SCP-HTML-CSS/">SCP-HTML-CSS</a> by <a href="http://mozilla.org">Mozilla</a> and modified to be used with New Zealand students.</p>
+      <p>This presentation was forked from <a href="https://github.com/jbuck/SCP-HTML-CSS/">SCP-HTML-CSS</a> (Originally written by <a href="http://mozilla.org">Mozilla</a>) and modified by Ludwig Wendzich to be used with New Zealand students.</p>
 
       <p>This workshop was made possible by <a href="http://internetnz.org.nz">InternetNZ</a></p>
     </article>
