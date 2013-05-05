@@ -3,19 +3,17 @@
 /*********************************************************
 * Main styles
 */
-
 .deck-container {
+  background:#F3F3DA;
   font-family: 'Karla', sans-serif;
   font-size: 1.75em;
   line-height: 1.4;
-  background:url(../images/bg-sandstone-2.png);
-  color:rgb(62,62,62);
+  color:#001E39;
 }
 .deck-container:after {
     content: " ";
     float: right;
     display: block;
-    background: url(../images/tab-2.png);
     height: 41px;
     width: 150px;
     position: relative;
@@ -24,8 +22,9 @@
     z-index: 999;
 }
 .deck-container > .slide {
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+	color:#001E39;
 }
+
 .deck-container > .slide .deck-before, .deck-container > .slide .deck-previous {
   opacity: 0.4;
 }
@@ -39,7 +38,6 @@
   font-weight: 600;
 }
 .deck-container .slide h1 {
-  color: #063446;
   line-height: 1;
 }
 
@@ -62,18 +60,53 @@
   }
 
 .title-slide {
-	background: orange;
+	background: rgb(184,79,45) url(../images/gather_bg_orange.png);
+	background: url(../images/gather_bg_orange.svg),transparent;
+  	color: #DCE3B2;
+	text-shadow: 2px 2px 1px rgb(134,32,26);
 	}
+	
+.title-slide h1, .title-slide h2, .title-slide p{
+	color: #DCE3B2;
+}
 
 .deck-container .slide h2 {
   font-size: 2em;
-  color:rgb(62,62,62);
   border-bottom: none;
   padding-top: 100px;
   padding-bottom: 30px;
 }
+
+.deck-container .slide h2 {
+	text-transform: uppercase;
+	padding: 0.1em 0.5em;
+	background: rgb(220,226,177);
+	margin-left: -0.5em;
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	}
+
+	.deck-container .slide h2:before, .deck-container .slide h2:after {
+		content: "";
+		position: absolute;
+		display: block;
+		border-style: solid;
+		border-color: rgb(220,226,177) transparent transparent transparent;
+		top: 0;
+		left: 100%;
+		border-width: 1em;
+		margin-left: -1em;
+		}
+
+		.deck-container .slide h2:after {
+			border-color: transparent transparent rgb(220,226,177)  transparent;
+			bottom: 0;
+			top: auto;
+			}
+
+
 .deck-container .slide h3 {
-  color:rgb(62,62,62);
   padding: 30px 0;
 }
 .deck-container .slide pre {
@@ -197,7 +230,7 @@
   color: #fff;
 }
 .deck-container .slide a, .deck-container .slide a:hover, .deck-container .slide a:focus, .deck-container .slide a:active, .deck-container .slide a:visited {
-  color: #599;
+  color: #EFAD5F;
   text-decoration: none;
 }
 .deck-container .slide a:hover, .deck-container .slide a:focus {
