@@ -111,7 +111,7 @@
 
     <article class='slide'>
       <h2>What's in a URL</h2>
-      <h2><span class="highlight h-1">protocol</span>://<span class="highlight h-2">server</span>/<span class="highlight h-3">path</span></h2>
+      <p class="focus"><span class="highlight h-1">protocol</span>://<span class="highlight h-2">server</span>/<span class="highlight h-3">path</span></p>
       <ul>
           <li><span class="highlight h-1">How</span> e.g. http</li>
           <li><span class="highlight h-2">Where</span> e.g. gathergather.co.nz</li>
@@ -154,15 +154,15 @@
     </article>
 
     <article class='slide'>
-      <h2>An ISP can charge extra to allow access to your favourite website, e.g. Facebook</h2>
+      <p class="focus vcenter">An ISP can charge extra to allow access to your favourite website, e.g. Facebook</p>
     </article>
 
     <article class='slide'>
-      <h2>A government can censor access to information, e.g. North Korea</h2>
+      <p class="focus vcenter">A government can censor access to information, e.g. North Korea</p>
     </article>
 
     <article class='slide'>
-      <h2>Telecom, who owns the Souther Cross Cable, could slow down other ISPs' international requests</h2>
+      <p class="focus vcenter">Telecom, who owns the Souther Cross Cable, could slow down other ISPs' international requests</p>
     </article>
 
     <article class='slide'>
@@ -240,11 +240,11 @@
     <article class='slide'>
       <h2>HTML tags</h2>
       <p>The structure of a webpage is defined by HTML <span class="keyword">tags</span>. Angled brackets denote tags, like this:</p>
-      <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;</code></p>
+      <p class="centered vcenter" style="font-size: 3em;"><code>&lt;tag&gt;</code></p>
     </article>
 
       <article class='slide'>
-      <h2><code>&lt;<span class="highlight h-1">a</span> <span class="highlight h-2">href</span>="<span class="highlight h-3">#</span>"&gt;<span class="highlight h-4">Gather</span>&lt;/a&gt;</code></h2>
+      <p class="focus"><code>&lt;<span class="highlight h-1">a</span> <span class="highlight h-2">href</span>="<span class="highlight h-3">#</span>"&gt;<span class="highlight h-4">Gather</span>&lt;/a&gt;</code></p>
       <ul>
           <li><span class="highlight h-1">Tag Name</span></li>
           <li><span class="highlight h-2">Attribute Name</span> </li>
@@ -431,14 +431,14 @@ This text &lt;br&gt;goes over&lt;br&gt;several lines.
 &lt;hr&gt;
 Hello&lt;br&gt;world
 &lt;input type="text"&gt;
-&lt;img src="http://gathergather.co.nz/grumpy_cat.png"&gt;
+&lt;img src="http://gathergather.co.nz/grumpy-cat.png"&gt;
           </pre>
         </div>
         <div class="right">
           <div class="preview">
             <hr>
             Hello<br>world
-            <img class="align-left" src="http://gathergather.co.nz/grumpy_cat.png">
+            <img class="align-left" src="http://gathergather.co.nz/grumpy-cat.png">
           </div>
         </div>
       </div>
@@ -476,7 +476,7 @@ Hello&lt;br&gt;world
       <pre class="prettyprint">&lt;img <span class="highlight h-1">src</span>="<span class="highlight h-2">http://gathergather.co.nz/grumpy-cat.png</span>"&gt;</pre>
       <ul>
         <li><code>src</code> is the <em class="highlight h-1">attribute</em></li>
-        <li><code>http://gathergather.co.nz/grumpy_cat.png</code> is the <em class="highlight highlight-2">value</em> of that attribute</li>
+        <li><code>http://gathergather.co.nz/grumpy-cat.png</code> is the <em class="highlight h-2">value</em> of that attribute</li>
       </ul>
       <p>With an <code>img</code> tag, the value of the <code>src</code> attribute tells the browser what the <em>url source</em> of our image is.</p>
     </article>
@@ -494,7 +494,7 @@ Hello&lt;br&gt;world
       <h2>Working with images</h2>
       <p class="sidenote">For example, without <code>width</code> and <code>height</code> attributes, the browser displays image at original size.</p>
       <pre class="prettyprint">&lt;img src="http://gathergather.co.nz/grumpy-cat.png"&gt;</pre>
-      <img src="http://gathergather.co.nz/grumpy_cat.png" />
+      <img src="http://gathergather.co.nz/grumpy-cat.png" />
     </article>
 
     <!-- SLIDE: HTML -->
@@ -502,7 +502,7 @@ Hello&lt;br&gt;world
       <h2>Working with images</h2>
       <p class="sidenote">Now with a manipulated width and height (about 50% smaller):</p>
       <pre class="prettyprint">&lt;img src="http://gathergather.co.nz/grumpy-cat.png" width="320" height="262"&gt;</pre>
-      <img src="http://gathergather.co.nz/grumpy_cat.png" width="320" height="262" />
+      <img src="http://gathergather.co.nz/grumpy-cat.png" width="320" height="262" />
     </article>
 
         <!-- SLIDE: HTML -->
@@ -557,12 +557,84 @@ Hello&lt;br&gt;world
       </ul>
     </article>
 
+        <article class='slide slide-list'>
+      <h2>Generic Container Tags</h2>
+      <p>Sometimes content you might want to group together (and treat differently with CSS) shouldn't be defined as a <code>h1</code> or <code>h2</code> or even a <code>p</code> paragraph. There are two kinds of generic containers available:</p>
+      <ul>
+        <li><code>span</code> - An <span class="keyword">inline</span> container.<br />
+          Good for highlighting keywords like I did in this bullet.</li>
+        <li><code>div</code> - An <span class="keyword">block</span> container.<br />
+          Much like a paragraph, it creates a line break above and below to create a box.</li>
+      </ul>
+<pre>&lt;div&gt;I'm a div!&lt;/div&gt;
+&lt;div&gt;I'm another div!&lt;/div&gt;
+</pre>
+    </article>
+
+    <article class='slide slide-list'>
+      <h2>Semantic HTML Tags</h2>
+      <p>Historically, when making non-trivial websites, it required nesting lots of <code>div</code> tags within <code>div</code> tags (within <code>div</code> tags!) like this:</p>
+<pre>&lt;div&gt;
+  &lt;div&gt;
+    &lt;div&gt;Home&lt;/div&gt;
+    &lt;div&gt;About&lt;/div&gt;
+    &lt;div&gt;Contact&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  Welcome to my blog!
+  &lt;div&gt;[...Blog Post...]&lt;/div&gt;
+  &lt;div&gt;[...Blog Post...]&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  [...Sidebar Ad...]
+&lt;/div&gt;
+&lt;div&gt;
+  Copyright 2012
+&lt;/div&gt;
+</pre>
+    </article>
+
+    <article class='slide slide-list'>
+      <h2>Semantic HTML Tags</h2>
+      <p>With HTML5, there are an increasing number of semantic tags that better describe larger blocks of content such as: <code>header</code>, <code>footer</code>, <code>nav</code>, <code>section</code>, <code>article</code>, and <code>aside</code>.</p>
+<pre>&lt;header&gt;
+  &lt;nav&gt;
+    &lt;div&gt;Home&lt;/div&gt;
+    &lt;div&gt;About&lt;/div&gt;
+    &lt;div&gt;Contact&lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+&lt;section&gt;
+  Welcome to my blog!
+  &lt;article&gt;[...Blog Post...]&lt;/article&gt;
+  &lt;article&gt;[...Blog Post...]&lt;/article&gt;
+&lt;/section&gt;
+&lt;aside&gt;
+  [...Sidebar Ad...]
+&lt;/aside&gt;
+&lt;footer&gt;
+  Copyright 2012
+&lt;/footer&gt;
+</pre>
+    </article>
+
+    <article class='slide slide-list'>
+      <h2>Semantic HTML Tags</h2>
+      <p>There are two reasons we use semantic HTML tags:</p>
+      <ol>
+        <li>To indiciate the kind of content</li>
+        <li>To indicate the structure of the page</li>
+      </ol>
+      <p>This helps <span class="keyword">web crawlers</span> from search engines like Google or Bing better understand your content.</p>
+    </article>
+
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>Exercise #2 &mdash; Writing HTML</h2>
       <ol class="spacey_list">
-        <li>Indentify the semantics in the wireframe</li>
-        <li>Sketch out the HTML</li>
+        <li>Identify the semantics in the wireframe</li>
+        <li>Write the HTML.</li>
         <li>Fill in with dummy content</span>
         </li>
       </ol>
@@ -905,12 +977,12 @@ a:hover {
     <article class='slide slide-list'>
       <h2>Exercise #3</h2>
       <p>Use this time to try applying some of what you've learned to the previous example</p>
-      <ul>
+      <ol>
         <li>Visit <a href="https://thimble.webmaker.org/p/ey9/edit">https://thimble.webmaker.org/p/ey9/edit</a></li>
         <li>Add a class to each link (you can apply a class to more than one link)</li>
         <li>Try changing some of the fonts, colours, and other properties</li>
         <li>Add :hover styles for your links too.</li>
-      </ul>
+      </ol>
     </article>
 
 
@@ -922,79 +994,7 @@ a:hover {
     </article>
 
     <article class='slide'>
-      <p class="centered"><img src="assets/wireframe.png" alt="" /></p>
-    </article>
-
-    <article class='slide slide-list'>
-      <h2>Generic Container Tags</h2>
-      <p>Sometimes content you might want to group together (and treat differently with CSS) shouldn't be defined as a <code>h1</code> or <code>h2</code> or even a <code>p</code> paragraph. There are two kinds of generic containers available:</p>
-      <ul>
-        <li><code>span</code> - An <span class="keyword">inline</span> container.<br />
-          Good for highlighting keywords like I did in this bullet.</li>
-        <li><code>div</code> - An <span class="keyword">block</span> container.<br />
-          Much like a paragraph, it creates a line break above and below to create a box.</li>
-      </ul>
-<pre>&lt;div&gt;I'm a div!&lt;/div&gt;
-&lt;div&gt;I'm another div!&lt;/div&gt;
-</pre>
-    </article>
-
-    <article class='slide slide-list'>
-      <h2>Semantic HTML Tags</h2>
-      <p>Historically, when making non-trivial websites, it required nesting lots of <code>div</code> tags within <code>div</code> tags (within <code>div</code> tags!) like this:</p>
-<pre>&lt;div&gt;
-  &lt;div&gt;
-    &lt;div&gt;Home&lt;/div&gt;
-    &lt;div&gt;About&lt;/div&gt;
-    &lt;div&gt;Contact&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-  Welcome to my blog!
-  &lt;div&gt;[...Blog Post...]&lt;/div&gt;
-  &lt;div&gt;[...Blog Post...]&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-  [...Sidebar Ad...]
-&lt;/div&gt;
-&lt;div&gt;
-  Copyright 2012
-&lt;/div&gt;
-</pre>
-    </article>
-
-    <article class='slide slide-list'>
-      <h2>Semantic HTML Tags</h2>
-      <p>With HTML5, there are an increasing number of semantic tags that better describe larger blocks of content such as: <code>header</code>, <code>footer</code>, <code>nav</code>, <code>section</code>, <code>article</code>, and <code>aside</code>.</p>
-<pre>&lt;header&gt;
-  &lt;nav&gt;
-    &lt;div&gt;Home&lt;/div&gt;
-    &lt;div&gt;About&lt;/div&gt;
-    &lt;div&gt;Contact&lt;/div&gt;
-  &lt;/nav&gt;
-&lt;/header&gt;
-&lt;section&gt;
-  Welcome to my blog!
-  &lt;article&gt;[...Blog Post...]&lt;/article&gt;
-  &lt;article&gt;[...Blog Post...]&lt;/article&gt;
-&lt;/section&gt;
-&lt;aside&gt;
-  [...Sidebar Ad...]
-&lt;/aside&gt;
-&lt;footer&gt;
-  Copyright 2012
-&lt;/footer&gt;
-</pre>
-    </article>
-
-    <article class='slide slide-list'>
-      <h2>Semantic HTML Tags</h2>
-      <p>There are two reasons we use semantic HTML tags:</p>
-      <ol>
-        <li>To indiciate the kind of content</li>
-        <li>To indicate the structure of the page</li>
-      </ol>
-      <p>This helps <span class="keyword">web crawlers</span> from search engines like Google or Bing better understand your content.</p>
+      <p class="vcenter"><img src="assets/wireframe.png" alt="" /></p>
     </article>
 
     <!-- SLIDE: CSS -->
@@ -1092,11 +1092,11 @@ aside {
     <article class='slide slide-list'>
       <h2>Final Exercise</h2>
       <p>Use this time to create your own webpage.</p>
-      <ul>
+      <ol>
         <li>Draw a wireframe</li>
-        <li>Sketch out the HTML</li>
+        <li>"Mark up" the HTML on the wireframe, then write the HTML.</li>
         <li>Style it up with CSS</li>
-      </ul>
+      </ol>
       <h3>Got questions? Ask the volunteers to help you out!</h3>
     </article>
 

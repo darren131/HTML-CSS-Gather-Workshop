@@ -66,6 +66,16 @@
 	text-shadow: 2px 2px 1px rgb(134,32,26);
 	}
 	
+  .slide .focus {
+    padding-top: 1em;
+    font-size: 2em;
+    font-weight: bold;
+    }
+
+   .deck-container .slide .focus code {
+      color: inherit;
+    }
+  
 .title-slide h1, .title-slide h2,.title-slide h3, .title-slide h4, .title-slide p{
 	color: #DCE3B2;
 }
@@ -527,3 +537,22 @@ table.browser-grid td {
   padding-bottom: 0;
   text-align: center;
 }
+.h-1 {
+  color: #A54646;
+}
+
+.h-2 {
+  color: #6C98BB;
+}
+
+.h-3 {
+  color: #E2B542;
+  }
+
+.h-4 {
+  color: #609160;
+  }
+
+.h-5 {
+  color: #7B5F8E;
+  }
