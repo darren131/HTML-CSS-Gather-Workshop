@@ -555,3 +555,15 @@ table.browser-grid td {
 .h-5 {
   color: #7B5F8E;
   }
+
+.cheatsheet {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  }
+
+.cheatsheet div {
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+  }

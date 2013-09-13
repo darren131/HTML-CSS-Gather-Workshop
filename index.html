@@ -101,8 +101,10 @@
     <!-- SLIDE: Code Editor -->
     <article class='slide'>
       <h2>2. Text Editor</h2>
-      <p>Although there are plenty of good text editors out there, none will help you learn as you go. Today we'll be using <a href="https://thimble.webmaker.org/en-US/editor">Mozilla's Thimble</a>, a text editor that allows you to see errors as you type HTML and CSS.</p>
-      <img src="assets/thimblescreenshot.png">
+      <p>Although there are plenty of good text editors out there, none will help you learn as you go. Today we'll be using <a href="http://codepen.io/pen/">Codepen.io</a>, a text editor that allows you to see results as you type HTML and CSS.</p>
+
+      <p>Let's <a href="http://codepen.io/pen/">open up a new pen</a> in a new tab.</p>
+      <img src="assets/codepen.png">
     </article>
 
     <article class='slide title-slide'>
@@ -183,7 +185,7 @@
       <h2><strong>HTML</strong> <small>(Hypertext Markup Language)</small> <br>
           is the markup language.</h2>
           <p><img src="assets/html.png"  /></p>
-          <p>It should define the <strong>semantic structure</strong>.</p>
+          <p>It should define the <strong>semantic structure</strong>. Each tag has a specific <strong>purpose</strong>.</p>
     </article>
 
       <article class="slide">
@@ -208,51 +210,41 @@
       </div>
     </article>
 
-    <!-- SLIDE: HTML -->
     <article class='slide'>
-      <h2>What is HTML?</h2>
-      <p>HTML was created for <span class="keyword">web browsers</span> to easily read (not humans).</p>
-      <p>So this makes perfect sense to a web browser:</p>
-<pre>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</pre>
-    </article>
+        <h2>Let's play!</h2>
 
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>What is HTML?</h2>
-      <p>Whitespace through indentation (spaces) make your more HTML human-readable.</p>
-<pre class='prettyprint'>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt; &lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
-      <p class="sidenote">(Later on, you might also notice how automatic colour coding in your code editor helps a lot too.)</p>
-    </article>
+      <div class='vcenter'>
+        <p>Go to that Pen we open earlier and try these!</p>
 
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>HTML tags</h2>
-      <p>The structure of a webpage is defined by HTML <span class="keyword">tags</span>. Angled brackets denote tags, like this:</p>
-      <p class="centered vcenter" style="font-size: 3em;"><code>&lt;tag&gt;</code></p>
-    </article>
-
-      <article class='slide'>
-      <p class="focus"><code>&lt;<span class="highlight h-1">a</span> <span class="highlight h-2">href</span>="<span class="highlight h-3">#</span>"&gt;<span class="highlight h-4">Gather</span>&lt;/a&gt;</code></p>
-      <ul>
-          <li><span class="highlight h-1">Tag Name</span></li>
-          <li><span class="highlight h-2">Attribute Name</span> </li>
-          <li><span class="highlight h-3">Attribute Value</span></li>
-          <li><span class="highlight h-4">Text Node</span></li>
-      </ul>
+        <div class="fake-thimble cf">
+        <div class="left">
+          <pre>
+&lt;img src="http://gathergather.co.nz/grumpy-cat.png"&gt;<br>
+&lt;a href="#"&gt;I'm a link!&lt;/a&gt;
+          </pre>
+        </div>
+        <div class="right">
+          <div class="preview">
+            <img src="http://gathergather.co.nz/grumpy-cat.png">
+            <a href="#">I'm a link!</a>
+          </div>
+        </div>
+      </div>
+      </div>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>HTML tags</h2>
-      <p>Tags typically come in <strong>pairs</strong> &mdash; an opening tag and a closing tag with a forward slash:</p>
-      <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;&lt;/tag&gt;</code></p>
+      <p>The structure of a webpage is defined by HTML <span class="keyword">tags</span>. <span class="highlight h-1">Angled brackets</span> denote tags, like this:</p>
+      <p class="centered vcenter" style="font-size: 3em;"><code><span class="highlight h-1">&lt;</span>img<span class="highlight h-1">&gt;</span></code></p>
+    </article>
+
+    <!-- SLIDE: HTML -->
+    <article class='slide'>
+      <h2>HTML tags</h2>
+      <p>Tags typically come in <strong>pairs</strong> &mdash; an opening tag and a closing tag with a <span class="highlight h-1">forward slash</span>:</p>
+      <p class="centered" style="font-size: 3em;"><code>&lt;a&gt;&lt;<span class="highlight h-1">/</span>a&gt;</code></p>
       <p class="sidenote">Some examples:</p>
 <pre style="width: 45%; float: left;">&lt;!DOCTYPE html&gt;
 <strong class="highlight h-1">&lt;html&gt;</strong>
@@ -268,11 +260,11 @@
     <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>HTML tags</h2>
-      <p>Tags can be "nested" within other tags, like this:</p>
-      <p class="centered" style="font-size: 2.5em;"><code>&lt;tag&gt;<span class="highlight h-1" style="font-size: 1.3em;">&lt;tag&gt;&lt;/tag&gt;</span>&lt;/tag&gt;</code></p>
-      <p class="centered sidenote">(This relationship is often referred to using the terms "parent" node and "child" nodes.)</p>
+      <p>Tags can be "nested" within other tags, try it for yourself:</p>
+      <p class="centered " style="font-size: 2.5em;"><code><span class="highlight h-1">&lt;a href="#"&gt;</span><br><span class="highlight h-2" style="font-size: 1.3em;">&lt;img src="/grumpy-cat.png"&gt;</span><br><span class="highlight h-1">&lt;/a&gt;</span></code></p>
+      <p class="centered sidenote">(This relationship is often referred to using the terms "<span class="highlight h-1">parent</span>" node and "<span class="highlight h-2">child</span>" nodes.)</p>
       <br />
-      <p class="sidenote" style="margin-bottom: 0px;">For example:</p>
+<!--       <p class="sidenote" style="margin-bottom: 0px;">For example:</p>
       <ul class="sidenote">
         <li><code>&lt;title&gt;</code> is nested between opening and closing <code>&lt;head&gt;</code> tags so <code>&lt;head&gt;</code> is the parent node and <code>&lt;title&gt;</code> is the child node.</li>
         <li>Going further, <code>&lt;head&gt;</code> is also (at the same time) a child node of <code>&lt;html&gt;</code>.</li>
@@ -295,17 +287,33 @@
   &lt;body&gt;
   &lt;/body&gt;
 &lt;/html&gt;</pre>
-<br clear="all" />
+<br clear="all" /> -->
 
     </article>
 
-    <!-- SLIDE: HTML -->
+        <!-- SLIDE: HTML -->
     <article class='slide'>
-      <h2>HTML in a web browser</h2>
-      <p>I can <strong>View Page Source</strong> on any website to see the raw HTML behind the scenes.</p>
-      <p class="centered"><img src="assets/view-source.png" alt="view source" /></p>
+      <h2>Formatting</h2>
+      <p>Whitespace through indentation (spaces) make your more HTML human-readable.</p>
+<pre class='prettyprint'>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt; &lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+      <p class="sidenote">(Later on, you might also notice how automatic colour coding in your code editor helps a lot too.)</p>
     </article>
 
+        <!-- SLIDE: HTML -->
+    <article class='slide'>
+      <h2>Formatting</h2>
+      <p>HTML was created for <span class="keyword">web browsers</span> to easily read (not humans).</p>
+      <p>So this makes perfect sense to a web browser:</p>
+<pre>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+    </article>
+    
     <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>HTML content</h2>
@@ -322,75 +330,22 @@
 &lt;/html&gt;</pre>
     </article>
 
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>Exercise #1 &mdash; Reading the structure of a webpage</h2>
-      <div class="cheatsheet">
-        <div>
-          <h3>Section Formatting</h3>
-          <code>&lt;blockquote&gt;</code> &mdash; a quoted section<br />
-          <code>&lt;article&gt;</code> &mdash; a self contained piece of content<br />
-          <code>&lt;nav&gt;</code> &mdash; the navigation of a section<br />
-          <code>&lt;header&gt;</code> &mdash; the header of a section<br />
-          <code>&lt;footer&gt;</code> &mdash; the footer of a section<br />
-        </div>
-      </div>
+    <article class="slide">
+      <h2>Some more tags</h2>
+      <p>So now we know about <code>img</code> and <code>a</code>. Let's try: </p>
+      <pre>
+        &lt;h1&gt;Heading!&lt;/h1&gt;
+        <strong>&lt;strong&gt;Bold!&lt;/strong&gt;</strong>
+        <em>&lt;em&gt;Italics!&lt;/em&gt;</em>
+      </pre>
+
     </article>
 
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>Exercise #1 &mdash; Reading the structure of a webpage</h2>
-      <div class="cheatsheet">
-        <div>
-          <h3>Hierarchy</h3>
-          <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc to <code>&lt;h6&gt;</code> &mdash; heading levels 1 to 6<br />
-          <code>&lt;p&gt;</code> &mdash; paragraph<br />
-        </div>
-        <div>
-          <h3>Text Formatting</h3>
-          <code>&lt;em&gt;</code> &mdash; Emphasis (often italic)<br />
-          <code>&lt;strong&gt;</code> &mdash; Strong Emphasis (often bold)<br />
-        </div>
-        <div>
-          <h3>Special Types</h3>
-          <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> &mdash; Lists<br />
-          <code>&lt;a&gt;</code> &mdash; Links<br />
-          <code>&lt;img&gt;</code> &mdash; Embedded Image<br />
-        </div>
-      </div>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <img src="assets/nzherald.png">
-    </article>
-
-
-
-   <!-- new slide -->
-    <article class='slide title-slide'>
-      <h1>Going deeper</h1>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2><code>&lt;head&gt;</code> vs <code>&lt;body&gt;</code></h2>
-      <ul class="spacey_list">
-        <li>
-          What happens when I change the content in the <code>&lt;title&gt;</code> tag?
-        </li>
-        <li>
-          What's the difference between putting a tag in-between the <code>&lt;head&gt;</code> tag versus the <code>&lt;body&gt;</code> tag?
-        </li>
-      </ul>
-    </article>
-
-
-    <!-- SLIDE: HTML -->
+        <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>Void (or empty) HTML Tags</h2>
       <p><span class="keyword">Void tags</span> don't format content &mdash; instead they are used to render or embed objects in our page.</p>
-      <p>These tags <strong>do not</strong> come in pairs like <code>h1</code> or <code>p</code> tags.</p>
+      <p>These tags <strong>do not</strong> come in pairs like <code>h1</code> or <code>a</code> tags.</p>
 
       <div class="fake-thimble cf">
         <div class="left">
@@ -440,29 +395,42 @@ Hello&lt;br&gt;world
 
     </article>
 
-    <!-- SLIDE: HTML -->
+        <!-- SLIDE: HTML -->
     <article class='slide'>
-      <h2>Attributes</h2>
-      <p>Quick review:</p>
+      <h2>Review</h2>
       <ul>
         <li><strong>HTML tags</strong> define <em>structure</em>.</li>
         <li><strong>Text between opening &amp; closing tags</strong> define <em>content</em>.</li>
         <li><strong>Void HTML tags</strong> render special objects that are sometimes <em>sort of like content</em> or <em>seem structural</em> depending on the void tag.</li>
       </ul>
-      <p>Consider the <code>img</code> tag. Not very exciting right?</p>
+<!--       <p>Consider the <code>img</code> tag. Not very exciting right?</p>
 <pre>&lt;p&gt;Kicking up HTML a notch.&lt;/p&gt;
 <strong>&lt;img&gt;</strong>
-&lt;p&gt;Do you agree?&lt;/p&gt;</pre>
+&lt;p&gt;Do you agree?&lt;/p&gt;</pre> -->
+    </article>
+
+
+   <!-- new slide -->
+    <article class='slide title-slide'>
+      <h1>Going deeper</h1>
+    </article>
+
+          <article class='slide'>
+        <h2>Parts of tag</h2>
+      <p class="focus"><code>&lt;<span class="highlight h-1">a</span> <span class="highlight h-2">href</span>="<span class="highlight h-3">#</span>"&gt;<span class="highlight h-4">This is a link!</span>&lt;/a&gt;</code></p>
+      <ul>
+          <li><span class="highlight h-1">Tag Name</span></li>
+          <li><span class="highlight h-2">Attribute Name</span> </li>
+          <li><span class="highlight h-3">Attribute Value</span></li>
+          <li><span class="highlight h-4">Text Node</span></li>
+      </ul>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>Attributes</h2>
       <p>Sometimes we need to define data that we don't see right away but it's used by the browser to help render special content like hyperlinks, images, or video.</p>
-      <p class="sidenote">Here's that same <code>img</code> tag but now it's using an <span class="keyword">attribute</span> to tell my webpage where to find a source image:</p>
-<pre>&lt;p&gt;Kicking up HTML a notch.&lt;/p&gt;
-&lt;img <strong>src="http://gathergather.co.nz/grumpy-cat.png"</strong>&gt;
-&lt;p&gt;Do you agree?&lt;/p&gt;</pre>
+<pre>&lt;img <strong class="highlight h-1">src="http://gathergather.co.nz/grumpy-cat.png"</strong>&gt;</pre>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -515,18 +483,6 @@ Hello&lt;br&gt;world
     </article>
 
     <!-- SLIDE: HTML -->
-    <article class='slide'>
-      <h2>Working with images <span style="font-size: 22px;">(Group exercise - Part 1)</span></h2>
-      <p>Code along with me:</p>
-      <ol class="spacey_list">
-        <li>Open <a href="https://thimble.webmaker.org/p/eyj/edit" target="_blank"><code>https://thimble.webmaker.org/p/eyj/edit</code></a> in your browser</li>
-        <li>Use the <code>img</code> tag to embed an image of our fave LOL cat using <code>http://goo.gl/7eSU5</code> for the value of the <code>src</code> attribute.</li>
-        <li>Try changing the text too!</li>
-        <li>Save and check out the preview panel to make sure you got it right.</li>
-      </ol>
-    </article>
-
-    <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>Hyperlinks</h2>
       <p>The <code>&lt;a&gt;</code> <em>anchor</em> tag is used to tell the browser that we want to link to somewhere else on our site or on the web.</p>
@@ -552,115 +508,7 @@ Hello&lt;br&gt;world
       </ul>
     </article>
 
-        <article class='slide slide-list'>
-      <h2>Generic Container Tags</h2>
-      <p>Sometimes content you might want to group together (and treat differently with CSS) shouldn't be defined as a <code>h1</code> or <code>h2</code> or even a <code>p</code> paragraph. There are two kinds of generic containers available:</p>
-      <ul>
-        <li><code>span</code> - An <span class="keyword">inline</span> container.<br />
-          Good for highlighting keywords like I did in this bullet.</li>
-        <li><code>div</code> - An <span class="keyword">block</span> container.<br />
-          Much like a paragraph, it creates a line break above and below to create a box.</li>
-      </ul>
-<pre>&lt;div&gt;I'm a div!&lt;/div&gt;
-&lt;div&gt;I'm another div!&lt;/div&gt;
-</pre>
-    </article>
-
-    <article class='slide slide-list'>
-      <h2>Semantic HTML Tags</h2>
-      <p>Historically, when making non-trivial websites, it required nesting lots of <code>div</code> tags within <code>div</code> tags (within <code>div</code> tags!) like this:</p>
-<pre>&lt;div&gt;
-  &lt;div&gt;
-    &lt;div&gt;Home&lt;/div&gt;
-    &lt;div&gt;About&lt;/div&gt;
-    &lt;div&gt;Contact&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-  Welcome to my blog!
-  &lt;div&gt;[...Blog Post...]&lt;/div&gt;
-  &lt;div&gt;[...Blog Post...]&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-  [...Sidebar Ad...]
-&lt;/div&gt;
-&lt;div&gt;
-  Copyright 2012
-&lt;/div&gt;
-</pre>
-    </article>
-
-    <article class='slide slide-list'>
-      <h2>Semantic HTML Tags</h2>
-      <p>With HTML5, there are an increasing number of semantic tags that better describe larger blocks of content such as: <code>header</code>, <code>footer</code>, <code>nav</code>, <code>section</code>, <code>article</code>, and <code>aside</code>.</p>
-<pre>&lt;header&gt;
-  &lt;nav&gt;
-    &lt;div&gt;Home&lt;/div&gt;
-    &lt;div&gt;About&lt;/div&gt;
-    &lt;div&gt;Contact&lt;/div&gt;
-  &lt;/nav&gt;
-&lt;/header&gt;
-&lt;section&gt;
-  Welcome to my blog!
-  &lt;article&gt;[...Blog Post...]&lt;/article&gt;
-  &lt;article&gt;[...Blog Post...]&lt;/article&gt;
-&lt;/section&gt;
-&lt;aside&gt;
-  [...Sidebar Ad...]
-&lt;/aside&gt;
-&lt;footer&gt;
-  Copyright 2012
-&lt;/footer&gt;
-</pre>
-    </article>
-
-    <article class='slide slide-list'>
-      <h2>Semantic HTML Tags</h2>
-      <p>There are two reasons we use semantic HTML tags:</p>
-      <ol>
-        <li>To indiciate the kind of content</li>
-        <li>To indicate the structure of the page</li>
-      </ol>
-      <p>This helps <span class="keyword">web crawlers</span> from search engines like Google or Bing better understand your content.</p>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
-      <h2>Exercise #2 &mdash; Writing HTML</h2>
-      <ol class="spacey_list">
-        <li>Identify the semantic elements in the marked up image of the NZHerald (in your notes)</li>
-        <li>Write the HTML</li>
-        <li>Fill in with dummy content.</span>
-        </li>
-      </ol>
-      <h4>Ask the volunteers for help if you need it!</h4>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
-      <h2>HTML reference</h2>
-      <ul class="spacey_list">
-        <li>Download a <a href="http://woorkup.com/2009/12/16/html5-visual-cheat-sheet-reloaded/" target="_blank">cheatsheet of HTML tags</a>.</li>
-        <li>Try looking up individual tags using the HTML sections of <a href="https://developer.mozilla.org/en-US/docs/HTML/Element" target="_blank">Mozilla's Developer Network</a> or the <a href="http://www.w3.org/community/webed/wiki/HTML/Elements" target="_blank">W3C</a> for further breakdown.</li>
-        <li>For further exploration, use the <a href="http://hackasaurus.org/en-US/goggles/install/" target="_blank">Hackasaurus X-Ray Goggles</a> to look at any webpage.</li>
-        <li>And don't forget the "view source" option of your web browser!</li>
-      </ul>
-    </article>
-
-   <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
-      <h2>Exercise #3</h2>
-      <p>Use this time to start your own webpage.</p>
-      <ol>
-        <li>Draw a wireframe</li>
-        <li>"Mark up" the HTML on the wireframe</li>
-        <li>Write the HTML</li>
-      </ol>
-      <h3>Got questions? Ask the volunteers to help you out!</h3>
-    </article>
-
-
-    <!-- CSS -->
+        <!-- CSS -->
     <article class='slide slide-subhead title-slide'>
       <div class="vcenter">
         <h1>CSS basics</h1>
@@ -694,50 +542,14 @@ Hello&lt;br&gt;world
       <p class="centered"><img src="assets/css_parts.png" /></p>
     </article>
 
-       <!-- SLIDE: CSS -->
-    <article class='slide slide-list'>
-      <h2>Where to put your CSS</h2>
-      <p>CSS can live in two places &ndash; an external stylesheet, or at the top of your HTML page</p>
-<pre>
-&lt;head&gt;
-  &lt;style&gt;
-    <span class="omg">Style goes here!!!!!!!</span>
-  &lt;/style&gt;
-&lt;/head&gt;
-</pre>
-
-<pre>
-&lt;head&gt;
-  &lt;link rel="stylesheet" href="<span class="omg">stylesheet.css</span>"&gt;
-&lt;/head&gt;
-</pre>
-
-      <p>Inside <span class="omg">stylesheet.css</span>, there is <strong>no</strong> <code>&lt;style&gt;</code> tag.</p>
-
-    </article>
-
-        <!-- SLIDE: CSS -->
-    <article class='slide'>
-      <h2>Inspecting the DOM</h2>
-      <p>You can use <strong>Inspect Element</strong> to see <strong>DOM</strong> (Document Object Model). This is what the browser does with HTML.</p>
-      <p class="sidenote">(I suggest that you do this yourself any time you see something you like so you can reverse-engineer it.)</p>
-      <p class="centered"><img src="assets/inspect-element.png" alt="view source" /></p>
-    </article>
-
-
-      <!-- SLIDE: CSS -->
-    <article class='slide slide-list'>
+        <article class='slide slide-list'>
       <h2>Our first selector: body</h2>
       <p><code>body</code> is a selector that applies styles to the entire page, and all of its content. All elements in the page will <em>inherit</em> the styles you define.</p>
 
 <pre>
-&lt;head&gt;
-  &lt;style&gt;
     <span class="omg">body</span> {
      font-family: sans-serif;
     }
-  &lt;/style&gt;
-&lt;/head&gt;
 </pre>
 
     </article>
@@ -748,13 +560,9 @@ Hello&lt;br&gt;world
       <p><code>background-color</code> is a property that can be applied to any tag, such as the <code>body</code>.</p>
 
 <pre>
-&lt;head&gt;
-  &lt;style&gt;
     body {
      <span class="omg">background-color: blue;</span>
     }
-  &lt;/style&gt;
-&lt;/head&gt;
 </pre>
 
     </article>
@@ -774,7 +582,7 @@ Hello&lt;br&gt;world
     <article class='slide slide-list'>
       <h2>Challenge!</h2>
       <h4>Solve the riddle by changing the page's background colour</h4>
-      <p>View <code><a href="https://thimble.webmaker.org/p/tkx/edit" target="_blank">https://thimble.webmaker.org/p/tkx/edit</a></code> in your browser. Your challenge is to change the background colour, so that the answer to the riddle will <strong>magically appear</strong>!</p>
+      <p>View <code><a href="http://codepen.io/anon/pen/CiuGA" target="_blank">this Codepen</a></code> in your browser. Your challenge is to change the background colour, so that the answer to the riddle will <strong>magically appear</strong>!</p>
 <div class="fake-thimble cf">
   <div class="left">
     <pre>
@@ -793,7 +601,7 @@ body {
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Changing the font colour</h2>
-      <p>Take a look at <a href="https://thimble.webmaker.org/p/eyv/edit">https://thimble.webmaker.org/p/eyv/edit</a></p>
+      <p>Take a look at <a href="http://codepen.io/anon/pen/fiEmC" target="_blank">this Codepen</a></p>
       <p>Now the text is a bit hard to read on the gray background. Because the <code>&lt;body&gt;</code> tag is the highest possible visible HTML tag, the <code>body</code> selector will also allow us to target the font color on the <em>entire</em> page.</p>
 <pre>body { background-color: gray; <strong>color: white;</strong> }</pre>
     </article>
@@ -855,7 +663,6 @@ h2 { <strong>font-weight: normal;</strong> }</pre>
       <p>As with HTML, extra whitespace and line breaks add to readability.</p>
       <p>Our current CSS can be written like this:</p>
 <pre class="prettyprint lang-css">
-&lt;style&gt;
   body {
     background-color: gray;
     color: white;
@@ -873,7 +680,6 @@ h2 { <strong>font-weight: normal;</strong> }</pre>
     font-size: 22px;
     font-weight: normal;
   }
-&lt;/style&gt;
 </pre>
     </article>
 
@@ -885,7 +691,6 @@ h2 { <strong>font-weight: normal;</strong> }</pre>
       <p>As part of your selector, you need to use the <code>:hover</code> <span class="keyword">pseudo selector</span>.</p>
 
 <pre>
-&lt;style&gt;
 a {
   background-color: black;
   color: white;
@@ -894,9 +699,6 @@ a {
 <span class="omg">a:hover {
   color: red;
 }</span>
-&lt;/style&gt;
-
-&lt;a href="http://gathergather.co.nz"&gt;Gather&lt;/a&gt;
 </pre>
 
     </article>
@@ -904,10 +706,17 @@ a {
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>CSS classes</h2>
-      <p>Wait! What happens when we add another link to the page and it's not part of our navigation?
-      <span class="sidenote">Putting all the styles inline wouldn't be wise...</span></p>
+      <p>Wait! What happens when we add another link to the page and it's not part of our navigation? <a href="http://codepen.io/anon/pen/Bvkwi" target="_blank">Open Codepen</a></p>
 <pre>
-&lt;style&gt;
+&lt;a href="index.html"&gt;Home&lt;/a&gt;
+&lt;a href="about.html"&gt;About&lt;/a&gt;
+&lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+
+&lt;p&gt;Follow me on
+ <strong> &lt;a href="http://twitter.com/nzgather&gt;Twitter&lt;/a&gt;</strong>!
+&lt;/p&gt;
+</pre>
+<pre>
 a {
   background-color: black;
   color: white;
@@ -916,15 +725,6 @@ a {
 a:hover {
   background-color: purple;
 }
-&lt;/style&gt;
-
-&lt;a href="index.html"&gt;Home&lt;/a&gt;
-&lt;a href="about.html"&gt;About&lt;/a&gt;
-&lt;a href="contact.html"&gt;Contact&lt;/a&gt;
-
-&lt;p&gt;Follow me on
-  &lt;a href="http://twitter.com/nzgather" target="_blank"&gt;Twitter&lt;/a&gt;!
-&lt;/p&gt;
 </pre>
     </article>
 
@@ -941,12 +741,12 @@ a:hover {
 
 <pre>
 &lt;a <strong>class="nav_button"</strong>&gt;Home&lt;/a&gt;
+</pre>
 
-&lt;style&gt;
+<pre>
 <strong>.nav_button</strong> {
   font-family: Georgia;
 }
-&lt;/style&gt;
 </pre>
 
     </article>
@@ -956,20 +756,9 @@ a:hover {
       <h2>CSS classes</h2>
       <p>Let's apply a "nav_button" CSS class to our current navigation links:</p>
       <pre>
-&lt;style&gt;
-a {
-  background-color: black;
-  color: white;
-}
-
-a:hover {
-  background-color: purple;
-}
-&lt;/style&gt;
-
-&lt;a class="nav_button" href="index.html"&gt;Home&lt;/a&gt;
-&lt;a class="nav_button" href="about.html"&gt;About&lt;/a&gt;
-&lt;a class="nav_button" href="contact.html"&gt;Contact&lt;/a&gt;
+&lt;a <strong>class="nav_button"</strong> href="index.html"&gt;Home&lt;/a&gt;
+&lt;a <strong>class="nav_button"</strong> href="about.html"&gt;About&lt;/a&gt;
+&lt;a <strong>class="nav_button"</strong> href="contact.html"&gt;Contact&lt;/a&gt;
 
 &lt;p&gt;Follow me on
   &lt;a href="http://twitter.com/nzgather" target="_blank"&gt;Twitter&lt;/a&gt;!
@@ -1021,18 +810,162 @@ a:hover {
       </ul>
     </article>
 
-    <!-- SLIDE: CSS -->
-    <article class='slide slide-list'>
-      <h2>Exercise #4</h2>
-      <p>Use this time to try applying some of what you've learned to the previous example</p>
-      <ol>
-        <li>Visit <a href="https://thimble.webmaker.org/p/ey9/edit">https://thimble.webmaker.org/p/ey9/edit</a></li>
-        <li>Add a class to each link (you can apply a class to more than one link)</li>
-        <li>Try changing some of the fonts, colours, and other properties</li>
-        <li>Add :hover styles for your links too.</li>
-      </ol>
+    <article class='slide title-slide'>
+      <h1>Like a pro!</h1>
     </article>
 
+    <article class='slide'>
+      <h2>Download the ZIP</h2>
+      <p>We're done playing, it's time to work with some real files.</p>
+      <p><a href="#">Download to your desktop.</a></p>
+    </article>
+
+    <!-- SLIDE: HTML -->
+    <article class='slide'>
+      <h2><code>&lt;head&gt;</code> vs <code>&lt;body&gt;</code></h2>
+      <ul class="spacey_list">
+        <li>
+          What happens when I change the content in the <code>&lt;title&gt;</code> tag?
+        </li>
+        <li>
+          What's the difference between putting a tag in-between the <code>&lt;head&gt;</code> tag versus the <code>&lt;body&gt;</code> tag?
+        </li>
+      </ul>
+    </article>
+
+        <article class='slide slide-list'>
+      <h2>Generic Container Tags</h2>
+      <p>Sometimes content you might want to group together (and treat differently with CSS) shouldn't be defined as a <code>h1</code> or <code>h2</code> or even a <code>p</code> paragraph. There are two kinds of generic containers available:</p>
+      <ul>
+        <li><code>span</code> - An <span class="keyword">inline</span> container.<br />
+          Good for highlighting keywords like I did in this bullet.</li>
+        <li><code>div</code> - An <span class="keyword">block</span> container.<br />
+          Much like a paragraph, it creates a line break above and below to create a box.</li>
+      </ul>
+<pre>&lt;div&gt;I'm a div!&lt;/div&gt;
+&lt;div&gt;I'm another div!&lt;/div&gt;
+</pre>
+    </article>
+
+<!--     <article class='slide slide-list'>
+      <h2>Semantic HTML Tags</h2>
+      <p>Historically, when making non-trivial websites, it required nesting lots of <code>div</code> tags within <code>div</code> tags (within <code>div</code> tags!) like this:</p>
+<pre>&lt;div&gt;
+  &lt;div&gt;
+    &lt;div&gt;Home&lt;/div&gt;
+    &lt;div&gt;About&lt;/div&gt;
+    &lt;div&gt;Contact&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  Welcome to my blog!
+  &lt;div&gt;[...Blog Post...]&lt;/div&gt;
+  &lt;div&gt;[...Blog Post...]&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  [...Sidebar Ad...]
+&lt;/div&gt;
+&lt;div&gt;
+  Copyright 2012
+&lt;/div&gt;
+</pre>
+    </article> -->
+
+    <article class='slide slide-list'>
+      <h2>Semantic HTML Tags</h2>
+      <p>There are an increasing number of semantic tags that better describe larger blocks of content such as: <code>header</code>, <code>footer</code>, <code>nav</code>, <code>section</code>, <code>article</code>, and <code>aside</code>.</p>
+<pre><strong>&lt;header&gt;</strong>
+<strong>  &lt;nav&gt;</strong>
+    &lt;div&gt;Home&lt;/div&gt;
+    &lt;div&gt;About&lt;/div&gt;
+    &lt;div&gt;Contact&lt;/div&gt;
+  <strong>&lt;/nav&gt;</strong>
+<strong>&lt;/header&gt;</strong>
+<strong>&lt;section&gt;</strong>
+  Welcome to my blog!
+  <strong>&lt;article&gt;</strong>[...Blog Post...]<strong>&lt;/article&gt;</strong>
+  <strong>&lt;article&gt;</strong>[...Blog Post...]<strong>&lt;/article&gt;</strong>
+<strong>&lt;/section&gt;</strong>
+<strong>&lt;aside&gt;</strong>
+  [...Sidebar Ad...]
+<strong>&lt;/aside&gt;</strong>
+<strong>&lt;footer&gt;</strong>
+  Copyright 2012
+<strong>&lt;/footer&gt;</strong>
+</pre>
+    </article>
+
+    <article class='slide slide-list'>
+      <h2>Semantic HTML Tags</h2>
+      <p>There are two reasons we use semantic HTML tags:</p>
+      <ol>
+        <li>To indiciate the kind of content</li>
+        <li>To indicate the structure of the page</li>
+      </ol>
+      <p>This helps <span class="keyword">web crawlers</span> from search engines like Google or Bing better understand your content.</p>
+    </article>
+
+    <!-- SLIDE: HTML -->
+    <article class='slide'>
+      <h2>Exercise #1 &mdash; Reading the structure of a webpage</h2>
+      <img src="assets/nzherald.png">
+    </article>
+
+
+    <!-- SLIDE: HTML -->
+    <article class='slide'>
+      <h2>Exercise #1 &mdash; Reading the structure of a webpage</h2>
+      <div class="cheatsheet">
+        <div>
+          <h3>Section Formatting</h3>
+          <code>&lt;blockquote&gt;</code> &mdash; a quoted section<br />
+          <code>&lt;article&gt;</code> &mdash; a self contained piece of content<br />
+          <code>&lt;nav&gt;</code> &mdash; the navigation of a section<br />
+          <code>&lt;header&gt;</code> &mdash; the header of a section<br />
+          <code>&lt;footer&gt;</code> &mdash; the footer of a section<br />
+        </div>
+        <div>
+          <h3>Hierarchy</h3>
+          <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc to <code>&lt;h6&gt;</code> &mdash; heading levels 1 to 6<br />
+          <code>&lt;p&gt;</code> &mdash; paragraph<br />
+        </div>
+        <div>
+          <h3>Text Formatting</h3>
+          <code>&lt;em&gt;</code> &mdash; Emphasis (often italic)<br />
+          <code>&lt;strong&gt;</code> &mdash; Strong Emphasis (often bold)<br />
+        </div>
+        <div>
+          <h3>Special Types</h3>
+          <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> &mdash; Lists<br />
+          <code>&lt;a&gt;</code> &mdash; Links<br />
+          <code>&lt;img&gt;</code> &mdash; Embedded Image<br />
+        </div>
+      </div>
+    </article>
+
+
+    <!-- SLIDE: HTML -->
+    <article class='slide slide-list'>
+      <h2>Exercise #2 &mdash; Writing HTML</h2>
+      <ol class="spacey_list">
+        <li>Identify the semantic elements in the marked up image of the NZHerald (in your notes)</li>
+        <li>Write the HTML</li>
+        <li>Fill in with dummy content.</span>
+        </li>
+      </ol>
+      <h4>Ask the volunteers for help if you need it!</h4>
+    </article>
+
+    <!-- SLIDE: HTML -->
+    <article class='slide slide-list'>
+      <h2>HTML reference</h2>
+      <ul class="spacey_list">
+        <li>Download a <a href="http://woorkup.com/2009/12/16/html5-visual-cheat-sheet-reloaded/" target="_blank">cheatsheet of HTML tags</a>.</li>
+        <li>Try looking up individual tags using the HTML sections of <a href="https://developer.mozilla.org/en-US/docs/HTML/Element" target="_blank">Mozilla's Developer Network</a> or the <a href="http://www.w3.org/community/webed/wiki/HTML/Elements" target="_blank">W3C</a> for further breakdown.</li>
+        <li>For further exploration, use the <a href="http://hackasaurus.org/en-US/goggles/install/" target="_blank">Hackasaurus X-Ray Goggles</a> to look at any webpage.</li>
+        <li>And don't forget the "view source" option of your web browser!</li>
+      </ul>
+    </article>
 
     <!-- SLIDE: CSS -->
     <article class='slide'>
@@ -1097,24 +1030,44 @@ aside {
 </pre>
     </article>
 
-     <!-- SLIDE: CSS -->
-    <article class='slide slide-list'>
-      <h2>Final Exercise</h2>
-      <p>Use this time to finish your own webpage.</p>
-      <ol>
-        <li>Style it up with CSS:
+            <article class='slide slide-list'>
+      <h2>Where to put your CSS</h2>
+      <p>CSS lives in a <code>.css</code> file and is linked to from the <code>&lt;head&gt;</code> of your HTML page</p>
+<!-- <pre>
+&lt;head&gt;
+  &lt;style&gt;
+    <span class="omg">Style goes here!!!!!!!</span>
+  &lt;/style&gt;
+&lt;/head&gt;
+</pre> -->
 
-          <ul>
-            <li>Define colours</li>
-            <li>Define fonts</li>
-            <li>Make a layout</li>
-          </ul>
-        </li>
-      </ol>
-      <h3>Got questions? Ask the volunteers to help you out!</h3>
+<pre>
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="<span class="omg">stylesheet.css</span>"&gt;
+&lt;/head&gt;
+</pre>
+
+<!--       <p>Inside <span class="omg">stylesheet.css</span>, there is <strong>no</strong> <code>&lt;style&gt;</code> tag.</p>
+ -->
     </article>
 
-    <!-- SLIDE: CSS -->
+
+    <!-- SLIDE: HTML -->
+    <article class='slide'>
+      <h2>Peeking under the hood!</h2>
+      <p>I can <strong>View Page Source</strong> on any website to see the raw HTML behind the scenes.</p>
+      <p class="centered"><img src="assets/view-source.png" alt="view source" /></p>
+    </article>
+
+            <!-- SLIDE: CSS -->
+    <article class='slide'>
+      <h2>Inspecting the DOM</h2>
+      <p>You can use <strong>Inspect Element</strong> to see <strong>DOM</strong> (Document Object Model). This is what the browser does with HTML.</p>
+      <p class="sidenote">(I suggest that you do this yourself any time you see something you like so you can reverse-engineer it.)</p>
+      <p class="centered"><img src="assets/inspect-element.png" alt="view source" /></p>
+    </article>
+
+        <!-- SLIDE: CSS -->
     <article class='slide'>
       <h2>CSS reference</h2>
       <ul>
@@ -1122,6 +1075,20 @@ aside {
         <li>Try looking up individual selectors and propertie using the CSS section of <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference" target="_blank">Mozilla's Developer Network</a> for further breakdown.</li>
         <li>And don't forget the "inspect element" option!</li>
       </ul>
+    </article>
+
+
+   <!-- SLIDE: HTML -->
+    <article class='slide slide-list'>
+      <h2>Exercise #3</h2>
+      <p>Use this time to start your own webpage.</p>
+      <ol>
+        <li>Draw a wireframe</li>
+        <li>"Mark up" the HTML on the wireframe</li>
+        <li>Write the HTML</li>
+        <li>Write the CSS</li>
+      </ol>
+      <h3>Got questions? Ask the volunteers to help you out!</h3>
     </article>
 
     <article class='slide'>
