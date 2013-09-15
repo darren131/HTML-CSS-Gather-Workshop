@@ -416,7 +416,9 @@ This text &lt;br&gt;goes over&lt;br&gt;several lines.
 }
 
 
-.deck-container .slide .fake-thimble > div {
+.deck-container .slide .fake-thimble > div,
+.deck-container .slide .splitter > div
+ {
   float: left;
   width: 50%;
   padding-top: 30px;
