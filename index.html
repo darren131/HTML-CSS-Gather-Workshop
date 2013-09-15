@@ -103,7 +103,6 @@
       <h2>2. Text Editor</h2>
       <p>Although there are plenty of good text editors out there, none will help you learn as you go. Today we'll be using <a href="http://codepen.io/pen/">Codepen.io</a>, a text editor that allows you to see results as you type HTML and CSS.</p>
 
-      <p>Let's <a href="http://codepen.io/pen/">open up a new pen</a> in a new tab.</p>
       <img src="assets/codepen.png">
     </article>
 
@@ -133,7 +132,7 @@
 
     <article class='slide'>
       <h2>How is the web "open"?</h2>
-      <p>There are a number of organisations that exists with the sole purpose of maintaining the "open-ness" of the web. What does that mean? Who are they?</p>
+      <p>There are a number of organisations that exist with the sole purpose of maintaining the "open-ness" of the web. What does that mean? Who are they?</p>
       <ul>
         <li>Web Standards — <a href="http://w3c.org">W3C</a></li>
         <li>Net Neutrality — <a href="http://internetnz.net.nz">InternetNZ</a></li>
@@ -177,7 +176,7 @@
     <article class='slide'>
       <h2>A basic webpage</h2>
       <p>
-        A webpage is mainly built using 3 web languages.
+        A webpage is mainly built using 3 web languages (HTML, CSS + JS).
       </p>
     </article>
 
@@ -214,7 +213,7 @@
         <h2>Let's play!</h2>
 
       <div class='vcenter'>
-        <p>Go to that Pen we open earlier and try these!</p>
+        <p>Let's <a href="http://codepen.io/pen/">open up a new pen</a> in a new tab.</p>
 
         <div class="fake-thimble cf">
         <div class="left">
@@ -294,7 +293,7 @@
         <!-- SLIDE: HTML -->
     <article class='slide'>
       <h2>Formatting</h2>
-      <p>Whitespace through indentation (spaces) make your more HTML human-readable.</p>
+      <p>Whitespace through indentation (spaces) makes your more HTML human-readable.</p>
 <pre class='prettyprint'>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -388,7 +387,8 @@ Hello&lt;br&gt;world
           <div class="preview">
             <hr>
             Hello<br>world
-            <img class="align-left" src="http://gathergather.co.nz/grumpy-cat.png">
+            <input type="text">
+            <img src="http://gathergather.co.nz/grumpy-cat.png">
           </div>
         </div>
       </div>
@@ -633,12 +633,10 @@ h2 { font-family: Courier; }</pre>
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Changing the font size</h2>
-      <p>Font sizes are typically defined in pixels (px) or "ems" (em).</p>
+      <p>Font sizes can be defined in pixels (px).</p>
       <ul>
         <li style="font-size: 20px;">20px</li>
         <li style="font-size: 45px;">45px</li>
-        <li style="font-size: 1em;">0.5em</li>
-        <li style="font-size: 1.5em;">1em</li>
       </ul>
       <p>Headers have default font-sizes defined by the browser. Let's override them. </p>
 <pre>h1 { <strong>font-size: 25px;</strong> }
@@ -839,7 +837,7 @@ a:hover {
       <ul>
         <li><code>span</code> - An <span class="keyword">inline</span> container.<br />
           Good for highlighting keywords like I did in this bullet.</li>
-        <li><code>div</code> - An <span class="keyword">block</span> container.<br />
+        <li><code>div</code> - A <span class="keyword">block</span> container.<br />
           Much like a paragraph, it creates a line break above and below to create a box.</li>
       </ul>
 <pre>&lt;div&gt;I'm a div!&lt;/div&gt;
@@ -876,9 +874,9 @@ a:hover {
       <p>There are an increasing number of semantic tags that better describe larger blocks of content such as: <code>header</code>, <code>footer</code>, <code>nav</code>, <code>section</code>, <code>article</code>, and <code>aside</code>.</p>
 <pre><strong>&lt;header&gt;</strong>
 <strong>  &lt;nav&gt;</strong>
-    &lt;div&gt;Home&lt;/div&gt;
-    &lt;div&gt;About&lt;/div&gt;
-    &lt;div&gt;Contact&lt;/div&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+    &lt;a href="#"&gt;Contact&lt;/a&gt;
   <strong>&lt;/nav&gt;</strong>
 <strong>&lt;/header&gt;</strong>
 <strong>&lt;section&gt;</strong>
@@ -899,7 +897,7 @@ a:hover {
       <h2>Semantic HTML Tags</h2>
       <p>There are two reasons we use semantic HTML tags:</p>
       <ol>
-        <li>To indiciate the kind of content</li>
+        <li>To indicate the kind of content</li>
         <li>To indicate the structure of the page</li>
       </ol>
       <p>This helps <span class="keyword">web crawlers</span> from search engines like Google or Bing better understand your content.</p>
@@ -953,7 +951,7 @@ a:hover {
         <li>Fill in with dummy content.</span>
         </li>
       </ol>
-      <h4>Ask the volunteers for help if you need it!</h4>
+      <h4>Ask the mentors for help if you need it!</h4>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -971,7 +969,7 @@ a:hover {
     <article class='slide'>
       <h2>Laying out webpages with CSS</h2>
       <p>Layout is one of the most challenging things to do in CSS because it requires you to think about the whole picture and plan ahead.</p>
-      <p>To creating a standard 2-column layout requires us to give dimensions to some of our content, and position it accordingly.</p>
+      <p>To create a standard 2-column layout requires us to give dimensions to some of our content, and position it accordingly.</p>
     </article>
 
     <article class='slide'>
@@ -1072,7 +1070,7 @@ aside {
       <h2>CSS reference</h2>
       <ul>
         <li>View a <a href="http://www.cheatography.com/davechild/cheat-sheets/css2/" target="_blank">cheatsheet of CSS selectors and properties</a>.</li>
-        <li>Try looking up individual selectors and propertie using the CSS section of <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference" target="_blank">Mozilla's Developer Network</a> for further breakdown.</li>
+        <li>Try looking up individual selectors and properties using the CSS section of <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference" target="_blank">Mozilla's Developer Network</a> for further breakdown.</li>
         <li>And don't forget the "inspect element" option!</li>
       </ul>
     </article>
@@ -1088,7 +1086,7 @@ aside {
         <li>Write the HTML</li>
         <li>Write the CSS</li>
       </ol>
-      <h3>Got questions? Ask the volunteers to help you out!</h3>
+      <h3>Got questions? Ask the mentors to help you out!</h3>
     </article>
 
     <article class='slide'>
